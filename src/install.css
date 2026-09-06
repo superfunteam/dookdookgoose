@@ -1,0 +1,32 @@
+.dook-footer-actions{display:inline-flex;align-items:center;justify-content:center;gap:18px;white-space:nowrap}
+.dook-tool-button{appearance:none;border:0;background:none;padding:9px 0;color:inherit;font:700 8px var(--mono,'Space Mono',monospace);letter-spacing:.7px;line-height:1.4;cursor:pointer}
+.dook-tool-button:hover{color:#f8cc64}
+[data-install-game][hidden]{display:none!important}
+.dook-title-tools{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:5px 18px;margin-top:4px}
+.dook-title-tools .dook-tool-button{color:#d3dec0;font-size:8px;padding:6px 0}
+.dook-title-tools .dook-tool-button:hover{color:#f8cc64}
+.paper-panel .dook-title-tools .dook-tool-button{color:#436447}
+.paper-panel .dook-title-tools .dook-tool-button:hover{color:#996330}
+.dook-dialog-open{overflow:hidden}
+.dook-share-overlay{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:#102c24c9;backdrop-filter:blur(5px);padding:max(24px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))}
+.dook-share-dialog{position:relative;width:min(440px,100%);max-height:calc(100svh - 48px);overflow:auto;padding:38px 35px 29px;border:1px solid #fff6d9;border-radius:7px;background:#f7efd5;color:#294636;box-shadow:8px 9px 0 #0c211e55;outline:none}
+.dook-dialog-eyebrow{padding-right:26px;font:700 8px var(--mono,'Space Mono',monospace);letter-spacing:1px;line-height:1.8;color:#76816b}
+.dook-share-dialog h2{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:41px;letter-spacing:-1.5px;line-height:1.05;margin:20px 0 14px}
+.dook-dialog-description{font-size:14px;line-height:1.6;color:#66735b;margin:0 0 24px}
+.dook-dialog-close{position:absolute;top:15px;right:16px;display:grid;place-items:center;width:36px;height:36px;border:1px solid #bdc5a6;border-radius:50%;background:transparent;color:#45634b;font:24px/1 Georgia,serif;cursor:pointer}
+.dook-dialog-close:hover{background:#e6e6cb}
+.dook-link-label{display:block;margin:0 0 8px;font:700 8px var(--mono,'Space Mono',monospace);letter-spacing:.8px;color:#6d785f}
+.dook-share-url{display:block;width:100%;min-height:48px;border:1px solid #a9b393;border-radius:4px;background:#fff9e7;color:#294636;padding:12px;font:12px/1.5 var(--mono,'Space Mono',monospace)}
+.dook-dialog-button{display:block;width:100%;min-height:49px;margin:17px 0 0;padding:14px 17px;border:0;border-radius:4px;background:#f8cc64;color:#294636;box-shadow:0 4px 0 #c29845;font:700 10px var(--mono,'Space Mono',monospace);letter-spacing:.6px;line-height:1.6;cursor:pointer}
+.dook-dialog-button:hover{background:#ffdc87}
+.dook-dialog-button:active{transform:translateY(2px);box-shadow:0 2px 0 #c29845}
+.dook-share-dialog :focus-visible{outline:3px solid #49724f;outline-offset:3px}
+.dook-copy-feedback,.dook-install-note{font-size:11px;line-height:1.7;color:#748067;margin:18px 0 0}
+.dook-install-steps{list-style:none;counter-reset:dook-install;display:grid;gap:16px;padding:0;margin:25px 0}
+.dook-install-steps li{counter-increment:dook-install;position:relative;padding-left:42px;min-height:30px;font-size:14px;line-height:1.55}
+.dook-install-steps li:before{content:counter(dook-install);position:absolute;left:0;top:0;display:grid;place-items:center;width:28px;height:28px;border:1px solid #c6ccaa;border-radius:50%;background:#e7e7ca;color:#416647;font:700 11px var(--mono,'Space Mono',monospace)}
+.dook-share-toast{position:fixed;z-index:120;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));max-width:calc(100vw - 36px);width:max-content;padding:12px 18px;border:1px solid #a8ba90;border-radius:5px;background:#173d32f5;color:#fff0be;box-shadow:0 5px 18px #10291d40;font:11px/1.6 'DM Sans',sans-serif;text-align:center;opacity:0;transform:translate(-50%,10px);transition:opacity .18s,transform .18s;pointer-events:none}
+.dook-share-toast.is-visible{opacity:1;transform:translate(-50%,0)}
+@media(max-width:700px){.dook-title-tools{gap:3px 15px;margin-top:2px}.dook-title-tools .dook-tool-button{font-size:7px;letter-spacing:.4px;padding:5px 0}.dook-share-dialog{padding:32px 25px 25px}.dook-share-dialog h2{font-size:35px}.dook-dialog-description,.dook-install-steps li{font-size:13px}}
+@media(max-width:700px){.dook-standalone .site-header{height:calc(62px + env(safe-area-inset-top));padding-top:env(safe-area-inset-top);padding-left:calc(20px + env(safe-area-inset-left));padding-right:calc(20px + env(safe-area-inset-right))}.dook-standalone #game{height:calc(100svh - 62px - env(safe-area-inset-top))}}
+@media(prefers-reduced-motion:reduce){.dook-share-toast,.dook-dialog-button{transition:none;transform:none}.dook-share-toast,.dook-share-toast.is-visible{transform:translateX(-50%)}}

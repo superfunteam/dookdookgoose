@@ -1,0 +1,7 @@
+export class Sound {
+ constructor(){this.enabled=true;this.music=true;this.ctx=null;this.step=0;this.next=0;}
+ start(){if(!this.ctx){this.ctx=new (window.AudioContext||window.webkitAudioContext)();this.master=this.ctx.createGain();this.master.gain.value=.22;this.master.connect(this.ctx.destination);}if(this.ctx.state==='suspended')this.ctx.resume().catch(()=>{});}
+ tone(freq,duration=.12,type='triangle',gain=.25,delay=0){if(!this.enabled||!this.ctx)return;const now=this.ctx.currentTime+delay,o=this.ctx.createOscillator(),g=this.ctx.createGain();o.type=type;o.frequency.setValueAtTime(freq,now);g.gain.setValueAtTime(0,now);g.gain.linearRampToValueAtTime(gain,now+.012);g.gain.exponentialRampToValueAtTime(.001,now+duration);o.connect(g);g.connect(this.master);o.start(now);o.stop(now+duration+.02);}
+ effect(kind){this.start();const notes={coin:[784,1047],jump:[330,440,660],dook:[260,390,260],hit:[160,100],bounce:[330,660,990,1320],win:[523,659,784,1047],click:[660],heart:[659,880]}[kind]||[440];notes.forEach((f,i)=>this.tone(f,.16,kind==='hit'?'sawtooth':'square',.18,i*.07));}
+ tick(mode){if(!this.ctx||!this.music||!this.enabled||mode==='paused'||document.hidden)return;const now=this.ctx.currentTime;if(now<this.next)return;this.next=now+(mode==='playing'?.14:.21);const melody=[523,0,659,784,0,659,587,0,523,659,880,784,0,659,587,392];const n=melody[this.step%16];if(n)this.tone(n*(mode==='playing'?1:.5),.18,'triangle',.18);if(this.step%4===0)this.tone([131,131,175,196][Math.floor(this.step/4)%4],.3,'triangle',.20);this.step++;}
+}

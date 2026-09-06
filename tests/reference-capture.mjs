@@ -1,0 +1,15 @@
+import {chromium} from '@playwright/test';
+import {mkdirSync} from 'node:fs';
+mkdirSync('output/qa/reference-comparison',{recursive:true});
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1200,height:1000},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
+await page.goto('http://localhost:5173/character-lab.html');await page.waitForTimeout(600);
+await page.evaluate(()=>{const l=window.__rigLab;l.pose(0,'idle');l.camera.position.set(6.7,3.1,4.8);l.controls.target.set(0,1.12,-.15);l.controls.update();l.look(.78);l.pose(0,'idle');l.renderer.render(l.scene,l.camera);});
+await page.locator('canvas').screenshot({path:'output/qa/reference-comparison/after-full.png'});
+await page.evaluate(()=>{const l=window.__rigLab;l.camera.position.set(0,1.8,5.5);l.controls.target.set(0,1.55,1.15);l.controls.update();l.look(0);l.pose(0,'idle');l.renderer.render(l.scene,l.camera);});
+await page.locator('canvas').screenshot({path:'output/qa/reference-comparison/after-face.png'});
+await page.locator('#compare').click();await page.waitForTimeout(250);await page.screenshot({path:'output/qa/reference-comparison/side-by-side.png'});
+await page.locator('#face').click();await page.waitForTimeout(80);await page.screenshot({path:'output/qa/reference-comparison/face-comparison.png'});
+await page.setViewportSize({width:390,height:844});await page.waitForTimeout(100);await page.screenshot({path:'output/qa/reference-comparison/mobile-compare.png',fullPage:true});
+console.log({errors});if(errors.length)throw new Error(errors.join('\n'));await browser.close();
