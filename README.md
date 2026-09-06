@@ -1,6 +1,6 @@
 # Dook, Dook, Goose!
 
-A portrait-first, PS1-inspired 3D runner about a very small ferret and a very big misunderstanding. Built with Three.js, Vite, original procedural geometry, pixel textures, and synthesized music and effects. No UI framework or ui.sh code.
+A portrait-first, PS1-inspired 3D runner about a very small ferret and a very big misunderstanding. Built with Three.js, Vite, original procedural geometry, pixel textures, and an original ElevenLabs-generated soundtrack and sound effects. No UI framework or ui.sh code.
 
 ## Play locally
 
@@ -63,3 +63,9 @@ Open `/character-lab.html` to orbit the models, slow or pause motion, and inspec
 Production address: **https://dookdookgoose.superfun.games/**. The build includes generated social cover art, ferret face icons, static Open Graph/Twitter metadata, canonical links, structured game data, a sitemap, and robots.txt. Share and Add to Home Screen controls are in the header and help panel. The portrait standalone app works offline after its first successful online load; updates wait until existing game tabs close.
 
 `npm run build` prepares the full deployable `dist/` folder. `npm run preview -- --port 5174` serves it for `npm run test:pwa`. `npm run test:install` tests sharing and installation with mocked native prompts against the development server. See `docs/branding.md` for artwork, exact prompts, deployment headers, and platform behavior. Physical phone installation and public hosting require their respective device/host; neither is implied by the local browser checks.
+
+## Music and sound
+
+Seven instrumental scores cover the title, dialogue, three action chapters, gelato ending, and setbacks. Eighteen effects include ferret dooks, Goose honks, paw contacts, barrel rolls, slides, gates and the window escape; quiet ambience distinguishes each environment. The sound button mutes all audio, and the help panel has a separate music switch. Audio starts after interaction and pauses with gameplay or when the page is hidden.
+
+Prepared audio is checked in under `public/audio`, works offline after the first complete download, and makes no live API requests. See `docs/audio.md` for the soundtrack and optional generation/packaging commands. API credentials remain in ignored local environment files.

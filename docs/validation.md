@@ -41,3 +41,15 @@ Bounding is the default gameplay gait from the first frame. The 30-bone rig reta
 - Native installation on physical iOS/Android hardware and public deployment have not been performed.
 
 Run `npm run test:pwa` against production preview on port 5174, and `npm run test:install` against development on port 5173 (or set `GAME_URL` to the preview origin).
+
+## Generated soundtrack and sound effects
+
+- Seven ElevenLabs Music v2 scores, eighteen Sound Effects v2 cues, and three environmental loops are integrated across all game modes.
+- Prepared audio totals 4.34 MiB; all 28 assets have verified hashes, valid 44.1 kHz audio, audible signal, and peak headroom. All ten loop boundaries pass decoded sample-transition checks, with zero mix warnings.
+- The production audio campaign passes title, personalized dialogue, all three chapters, and the Goose/gelato ending. Observed cues include 27 zoo gates, 19 mushroom launches/landings, window escape, three victories, 113 collectibles, 67 slides, and stride-synchronized paw taps.
+- The generated audio campaign reports no audio-load or JavaScript errors. Decoded score/ambience caching stays within two music buffers and one ambience buffer, approximately 34 MiB in the observed run including the short effects.
+- Lifecycle regression passes user-gesture unlocking, all seven score selections, crossfades, music/master controls, paused playback position, hidden/blur silence, dialogue cancellation, async cancellation races, effect overlap limits, missing/corrupt assets, retry backoff, and disposal.
+- Production offline verification decodes all 28 generated clips with network access disabled, then plays the game and opens the rig studio. Production build and all eighteen unit tests pass.
+- The authoring credential is excluded from the staged repository, client code, shipped assets, and production output. Runtime playback makes no ElevenLabs requests.
+
+Commands: `npm run test:audio`, `GAME_URL=http://localhost:5174/ npm run test:audio-campaign`, and `npm run test:pwa`. Physical phone audio output remains untested.

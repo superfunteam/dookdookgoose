@@ -1,0 +1,2171 @@
+{
+  "version": 1,
+  "sampleRate": 44100,
+  "partial": false,
+  "selection": null,
+  "expectedAssets": 28,
+  "assets": [
+    {
+      "id": "music/title",
+      "source": "assets/audio/masters/music-title.mp3",
+      "output": "public/audio/music/title.mp3",
+      "sourceSha256": "723e0891c11123af4496cc35a7a8d0970bb508ea509a19467d63561fce1b8a07",
+      "outputSha256": "425ddc5880c106aa65213676f00e1b71f84e3ae85d88c8ebbabdbc917d123e7e",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 40.045688,
+        "bytes": 640776,
+        "bitRate": 128008
+      },
+      "sourcePcm": {
+        "frames": 1766016,
+        "duration": 40.045714,
+        "samplePeakDb": -0.571336,
+        "rmsDb": -14.706268,
+        "seamDelta": 0
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.014354,
+        "trailingSilence": 0.950499,
+        "start": 0,
+        "end": 39.100227,
+        "removed": 0.945488,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 1722556,
+        "duration": 39.060227,
+        "samplePeakDb": -0.571336,
+        "rmsDb": -14.598111,
+        "seamDelta": 0.002395
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -12.68,
+        "truePeakDb": -0.56,
+        "rangeLu": 2.9,
+        "thresholdLufs": -22.94,
+        "targetOffsetDb": -0.82
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -20,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 39.105306,
+        "bytes": 626145,
+        "bitRate": 128094
+      },
+      "outputPcm": {
+        "frames": 1722556,
+        "duration": 39.060227,
+        "samplePeakDb": -8.231325,
+        "rmsDb": -22.362444,
+        "seamDelta": 0.004266
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.43,
+        "truePeakDb": -8.21,
+        "rangeLu": 2.9,
+        "thresholdLufs": -30.7,
+        "targetOffsetDb": -0.82
+      },
+      "warnings": []
+    },
+    {
+      "id": "music/story",
+      "source": "assets/audio/masters/music-story.mp3",
+      "output": "public/audio/music/story.mp3",
+      "sourceSha256": "d0c2b0ea39a975aaddc2694b66285b68868da2a4d2116889a8ff4300eb5ee504",
+      "outputSha256": "0876bad9a4f664aab8c9f455b869b259cf354e8ce1b88c2d6ee70f80dd6a9621",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 36.048938,
+        "bytes": 576828,
+        "bitRate": 128009
+      },
+      "sourcePcm": {
+        "frames": 1589760,
+        "duration": 36.04898,
+        "samplePeakDb": -1.520449,
+        "rmsDb": -20.790508,
+        "seamDelta": 0
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.03161,
+        "trailingSilence": 0.802744,
+        "start": 0,
+        "end": 35.251247,
+        "removed": 0.797732,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 1552816,
+        "duration": 35.211247,
+        "samplePeakDb": -1.520449,
+        "rmsDb": -20.688394,
+        "seamDelta": 0.000408
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -17.1,
+        "truePeakDb": -1.52,
+        "rangeLu": 6.9,
+        "thresholdLufs": -28.51,
+        "targetOffsetDb": -1.52
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -20,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 35.239184,
+        "bytes": 564287,
+        "bitRate": 128104
+      },
+      "outputPcm": {
+        "frames": 1552816,
+        "duration": 35.211247,
+        "samplePeakDb": -4.851005,
+        "rmsDb": -24.036984,
+        "seamDelta": 0.000355
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.47,
+        "truePeakDb": -4.85,
+        "rangeLu": 7,
+        "thresholdLufs": -31.86,
+        "targetOffsetDb": -1.53
+      },
+      "warnings": []
+    },
+    {
+      "id": "music/house",
+      "source": "assets/audio/masters/music-house.mp3",
+      "output": "public/audio/music/house.mp3",
+      "sourceSha256": "0472b97715d7bca9c20ebbf8d8fbe48e99dc6f8bdcb9f2edff60e8b19a3a47cc",
+      "outputSha256": "539268759f259dfa83e01923d63a3eee52b743f3ed29788aeae8b2c7618548e9",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 40.045688,
+        "bytes": 640776,
+        "bitRate": 128008
+      },
+      "sourcePcm": {
+        "frames": 1766016,
+        "duration": 40.045714,
+        "samplePeakDb": -0.306765,
+        "rmsDb": -16.434551,
+        "seamDelta": 0
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.008571,
+        "trailingSilence": 0.016304,
+        "start": 0,
+        "end": 40.045714,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 1764252,
+        "duration": 40.005714,
+        "samplePeakDb": -0.306765,
+        "rmsDb": -16.430939,
+        "seamDelta": 0.105427
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -13.77,
+        "truePeakDb": -0.14,
+        "rangeLu": 4,
+        "thresholdLufs": -23.77,
+        "targetOffsetDb": -1.24
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -20,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 40.045714,
+        "bytes": 641192,
+        "bitRate": 128092
+      },
+      "outputPcm": {
+        "frames": 1764252,
+        "duration": 40.005714,
+        "samplePeakDb": -6.559606,
+        "rmsDb": -23.092973,
+        "seamDelta": 0.034916
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.41,
+        "truePeakDb": -6.4,
+        "rangeLu": 4,
+        "thresholdLufs": -30.41,
+        "targetOffsetDb": -1.23
+      },
+      "warnings": []
+    },
+    {
+      "id": "music/woods",
+      "source": "assets/audio/masters/music-woods.mp3",
+      "output": "public/audio/music/woods.mp3",
+      "sourceSha256": "753430d8f3be1f9d385c398e60a7a29cb488e3570616b7eef5b1ed2756767aa4",
+      "outputSha256": "e72e2791b8f2f551413ec92183aec864d07103f53c3e195d2c242eccf9c5e88a",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 40.045688,
+        "bytes": 640776,
+        "bitRate": 128008
+      },
+      "sourcePcm": {
+        "frames": 1766016,
+        "duration": 40.045714,
+        "samplePeakDb": -0.672305,
+        "rmsDb": -15.821887,
+        "seamDelta": 0
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.012358,
+        "trailingSilence": 0.603673,
+        "start": 0,
+        "end": 39.447052,
+        "removed": 0.598662,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 1737851,
+        "duration": 39.407052,
+        "samplePeakDb": -0.672305,
+        "rmsDb": -15.752104,
+        "seamDelta": 0.025597
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -13.14,
+        "truePeakDb": -0.67,
+        "rangeLu": 5,
+        "thresholdLufs": -23.32,
+        "targetOffsetDb": -1.6
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -20,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 39.444898,
+        "bytes": 631579,
+        "bitRate": 128093
+      },
+      "outputPcm": {
+        "frames": 1737851,
+        "duration": 39.407052,
+        "samplePeakDb": -8.134031,
+        "rmsDb": -23.044516,
+        "seamDelta": 0.009057
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.42,
+        "truePeakDb": -8.1,
+        "rangeLu": 4.9,
+        "thresholdLufs": -30.6,
+        "targetOffsetDb": -1.59
+      },
+      "warnings": []
+    },
+    {
+      "id": "music/zoo",
+      "source": "assets/audio/masters/music-zoo.mp3",
+      "output": "public/audio/music/zoo.mp3",
+      "sourceSha256": "6a0f1422c1219933504dc52203105405b278bc74dfe87e1a861f04dd320751fe",
+      "outputSha256": "0b9bc4fac97f9e9db8d9e5db56aef35f7e9b5bc6338fa058c671e57975b3e31e",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 40.045688,
+        "bytes": 640776,
+        "bitRate": 128008
+      },
+      "sourcePcm": {
+        "frames": 1766016,
+        "duration": 40.045714,
+        "samplePeakDb": -1.044716,
+        "rmsDb": -16.70044,
+        "seamDelta": 0
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.008027,
+        "trailingSilence": 0.092948,
+        "start": 0,
+        "end": 40.045714,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 1764252,
+        "duration": 40.005714,
+        "samplePeakDb": -1.044716,
+        "rmsDb": -16.696221,
+        "seamDelta": 0.009277
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -15.14,
+        "truePeakDb": -0.95,
+        "rangeLu": 8.4,
+        "thresholdLufs": -25.24,
+        "targetOffsetDb": -1.97
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -20,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 40.045714,
+        "bytes": 641192,
+        "bitRate": 128092
+      },
+      "outputPcm": {
+        "frames": 1764252,
+        "duration": 40.005714,
+        "samplePeakDb": -1.895206,
+        "rmsDb": -21.859092,
+        "seamDelta": 0.052416
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.42,
+        "truePeakDb": -1.89,
+        "rangeLu": 3.8,
+        "thresholdLufs": -30.44,
+        "targetOffsetDb": -0.53
+      },
+      "warnings": []
+    },
+    {
+      "id": "music/ending",
+      "source": "assets/audio/masters/music-ending.mp3",
+      "output": "public/audio/music/ending.mp3",
+      "sourceSha256": "3768ee6f02de992d07bf5728be5f1e54d58639d9ee962711f4c0e28e6006b221",
+      "outputSha256": "63411b8402a956744b69359c363fc9fb30e2ef905eeaa8d701139a634a6d68a7",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 40.045688,
+        "bytes": 640776,
+        "bitRate": 128008
+      },
+      "sourcePcm": {
+        "frames": 1766016,
+        "duration": 40.045714,
+        "samplePeakDb": -1.524585,
+        "rmsDb": -18.467737,
+        "seamDelta": 0
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.020136,
+        "trailingSilence": 0.020658,
+        "start": 0,
+        "end": 40.045714,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 1764252,
+        "duration": 40.005714,
+        "samplePeakDb": -1.524585,
+        "rmsDb": -18.463409,
+        "seamDelta": 0.009205
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -16.6,
+        "truePeakDb": -1.53,
+        "rangeLu": 4,
+        "thresholdLufs": -26.63,
+        "targetOffsetDb": -0.95
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -20,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 40.045714,
+        "bytes": 641192,
+        "bitRate": 128092
+      },
+      "outputPcm": {
+        "frames": 1764252,
+        "duration": 40.005714,
+        "samplePeakDb": -5.209965,
+        "rmsDb": -22.305632,
+        "seamDelta": 0.011584
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.44,
+        "truePeakDb": -5.21,
+        "rangeLu": 4,
+        "thresholdLufs": -30.47,
+        "targetOffsetDb": -0.95
+      },
+      "warnings": []
+    },
+    {
+      "id": "music/setback",
+      "source": "assets/audio/masters/music-setback.mp3",
+      "output": "public/audio/music/setback.mp3",
+      "sourceSha256": "6b5e3be3abd15e2190687003798142fd050ab1edb654189fba8f0d388f85b779",
+      "outputSha256": "898997d696daa3e34fef4f851e76fbf3a6159e34d3b32473e36326041bd9700a",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 16.039125,
+        "bytes": 256671,
+        "bitRate": 128022
+      },
+      "sourcePcm": {
+        "frames": 707328,
+        "duration": 16.039184,
+        "samplePeakDb": -1.02569,
+        "rmsDb": -19.227759,
+        "seamDelta": 0.000002
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.028095,
+        "trailingSilence": 0.814989,
+        "start": 0,
+        "end": 15.229206,
+        "removed": 0.809977,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 669844,
+        "duration": 15.189206,
+        "samplePeakDb": -1.02569,
+        "rmsDb": -18.991297,
+        "seamDelta": 0.005689
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -17.09,
+        "truePeakDb": -0.95,
+        "rangeLu": 3.5,
+        "thresholdLufs": -27.94,
+        "targetOffsetDb": 0.02
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -20,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 15.229388,
+        "bytes": 244131,
+        "bitRate": 128242
+      },
+      "outputPcm": {
+        "frames": 669844,
+        "duration": 15.189206,
+        "samplePeakDb": -3.976234,
+        "rmsDb": -22.344117,
+        "seamDelta": 0.003441
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.43,
+        "truePeakDb": -3.97,
+        "rangeLu": 3.4,
+        "thresholdLufs": -31.29,
+        "targetOffsetDb": 0.03
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/click",
+      "source": "assets/audio/masters/sfx-click.mp3",
+      "output": "public/audio/sfx/click.mp3",
+      "sourceSha256": "b5f76ec49b5403ed0ad2680f2b55f5f81ced00c70b85a673ec8beee67a7afbe8",
+      "outputSha256": "843d076f6b0f7da9f5c9b50e6ee425c9c661a3559fff932f5fd2590e89642dea",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 0.522449,
+        "bytes": 8821,
+        "bitRate": 135071
+      },
+      "sourcePcm": {
+        "frames": 21168,
+        "duration": 0.48,
+        "samplePeakDb": 1.062934,
+        "rmsDb": -16.819275,
+        "seamDelta": 0.023439
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0.301179,
+        "start": 0,
+        "end": 0.248821,
+        "removed": 0.231179,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 10973,
+        "duration": 0.248821,
+        "samplePeakDb": 1.062934,
+        "rmsDb": -13.966115,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": null,
+        "truePeakDb": 1.07,
+        "rangeLu": 0,
+        "thresholdLufs": -70,
+        "targetOffsetDb": null
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -5.062934,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.287347,
+        "bytes": 3805,
+        "bitRate": 105934
+      },
+      "outputPcm": {
+        "frames": 10973,
+        "duration": 0.248821,
+        "samplePeakDb": -4.541927,
+        "rmsDb": -19.484859,
+        "seamDelta": 0.000115
+      },
+      "outputLoudness": {
+        "integratedLufs": null,
+        "truePeakDb": -4.53,
+        "rangeLu": 0,
+        "thresholdLufs": -70,
+        "targetOffsetDb": null
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/message",
+      "source": "assets/audio/masters/sfx-message.mp3",
+      "output": "public/audio/sfx/message.mp3",
+      "sourceSha256": "52ca51bdb4e6f68fdc0f6a30d476ac24b1e13b73569ea8ca5495878f3cd9cc94",
+      "outputSha256": "529c5f5e8ec33a6d7982cc3446398644e4b0aca417184ca2223431b12504ed58",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.044898,
+        "bytes": 17180,
+        "bitRate": 131534
+      },
+      "sourcePcm": {
+        "frames": 44100,
+        "duration": 1,
+        "samplePeakDb": 2.04863,
+        "rmsDb": -12.113462,
+        "seamDelta": 0.314588
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0,
+        "start": 0,
+        "end": 1,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 44100,
+        "duration": 1,
+        "samplePeakDb": 2.04863,
+        "rmsDb": -12.163526,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -8.45,
+        "truePeakDb": 2.04,
+        "rangeLu": 0,
+        "thresholdLufs": -19.6,
+        "targetOffsetDb": -0.03
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -6.04863,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 1.044898,
+        "bytes": 12896,
+        "bitRate": 98734
+      },
+      "outputPcm": {
+        "frames": 44100,
+        "duration": 1,
+        "samplePeakDb": -4.410512,
+        "rmsDb": -18.65709,
+        "seamDelta": 0.009297
+      },
+      "outputLoudness": {
+        "integratedLufs": -14.95,
+        "truePeakDb": -4.41,
+        "rangeLu": 0,
+        "thresholdLufs": -26.1,
+        "targetOffsetDb": -0.03
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/jump",
+      "source": "assets/audio/masters/sfx-jump.mp3",
+      "output": "public/audio/sfx/jump.mp3",
+      "sourceSha256": "9b5db0568d380a2a083781c3b5edb2d9c096c1d81756ac3e416f356b1db743b5",
+      "outputSha256": "d8d37ae02ba8810f1b9153c79924d570588df54bff965a9633575201f82108c8",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 0.731429,
+        "bytes": 12164,
+        "bitRate": 133043
+      },
+      "sourcePcm": {
+        "frames": 29999,
+        "duration": 0.680249,
+        "samplePeakDb": 1.646689,
+        "rmsDb": -13.008793,
+        "seamDelta": 0.275729
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0.000249,
+        "start": 0,
+        "end": 0.680249,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 29999,
+        "duration": 0.680249,
+        "samplePeakDb": 1.646689,
+        "rmsDb": -13.016115,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -8.87,
+        "truePeakDb": 1.86,
+        "rangeLu": 0,
+        "thresholdLufs": -18.87,
+        "targetOffsetDb": -0.03
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -5.646689,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.731429,
+        "bytes": 9134,
+        "bitRate": 99903
+      },
+      "outputPcm": {
+        "frames": 29999,
+        "duration": 0.680249,
+        "samplePeakDb": -4.056513,
+        "rmsDb": -19.10041,
+        "seamDelta": 0.015608
+      },
+      "outputLoudness": {
+        "integratedLufs": -14.95,
+        "truePeakDb": -4.05,
+        "rangeLu": 0,
+        "thresholdLufs": -24.95,
+        "targetOffsetDb": -0.05
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/roll",
+      "source": "assets/audio/masters/sfx-roll.mp3",
+      "output": "public/audio/sfx/roll.mp3",
+      "sourceSha256": "1b58fa1ba04b95a5cfc5b19bdec262d97725057a0934cae7929cb4951ede6ed5",
+      "outputSha256": "5ad5f2b77d60d5a1870bd47ea730d09f10cc97b312603e3bde26cb97d6c3da6c",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.227755,
+        "bytes": 20106,
+        "bitRate": 131009
+      },
+      "sourcePcm": {
+        "frames": 52920,
+        "duration": 1.2,
+        "samplePeakDb": 0.078221,
+        "rmsDb": -17.651529,
+        "seamDelta": 0.03253
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0.469955,
+        "start": 0,
+        "end": 0.800045,
+        "removed": 0.399955,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 35282,
+        "duration": 0.800045,
+        "samplePeakDb": 0.078221,
+        "rmsDb": -15.891093,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -15.25,
+        "truePeakDb": 0.1,
+        "rangeLu": 0,
+        "thresholdLufs": -26.2,
+        "targetOffsetDb": -0.01
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -4.078221,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.835918,
+        "bytes": 10388,
+        "bitRate": 99416
+      },
+      "outputPcm": {
+        "frames": 35282,
+        "duration": 0.800045,
+        "samplePeakDb": -4.36051,
+        "rmsDb": -20.424487,
+        "seamDelta": 0.000118
+      },
+      "outputLoudness": {
+        "integratedLufs": -19.75,
+        "truePeakDb": -4.36,
+        "rangeLu": 0,
+        "thresholdLufs": -30.7,
+        "targetOffsetDb": 0.02
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/slide",
+      "source": "assets/audio/masters/sfx-slide.mp3",
+      "output": "public/audio/sfx/slide.mp3",
+      "sourceSha256": "1deaaaec7663e4f5a605413d93a39812725acdc53939c4c51910d8073c8403a8",
+      "outputSha256": "b6fdc9df1b658594f904d663654f0df2647e0bec5683d5a1c40033ff29182851",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 0.835918,
+        "bytes": 13836,
+        "bitRate": 132414
+      },
+      "sourcePcm": {
+        "frames": 35280,
+        "duration": 0.8,
+        "samplePeakDb": -11.548799,
+        "rmsDb": -27.459919,
+        "seamDelta": 0.001275
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.000023,
+        "trailingSilence": 0.177302,
+        "start": 0,
+        "end": 0.692698,
+        "removed": 0.107302,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 30548,
+        "duration": 0.692698,
+        "samplePeakDb": -11.548799,
+        "rmsDb": -26.834602,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -28.78,
+        "truePeakDb": -11.42,
+        "rangeLu": 0,
+        "thresholdLufs": -38.78,
+        "targetOffsetDb": -0.02
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": 7.548799,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.731429,
+        "bytes": 9134,
+        "bitRate": 99903
+      },
+      "outputPcm": {
+        "frames": 30548,
+        "duration": 0.692698,
+        "samplePeakDb": -5.004253,
+        "rmsDb": -19.902707,
+        "seamDelta": 0.001879
+      },
+      "outputLoudness": {
+        "integratedLufs": -22.68,
+        "truePeakDb": -4.5,
+        "rangeLu": 0,
+        "thresholdLufs": -32.68,
+        "targetOffsetDb": 0.18
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/dook",
+      "source": "assets/audio/masters/sfx-dook.mp3",
+      "output": "public/audio/sfx/dook.mp3",
+      "sourceSha256": "94ed3e880441cbad6895354617d9abcf8c43a6e83a824cd3f0f0d5bc915a956c",
+      "outputSha256": "364878d8248fb0ee534a50334d2ae9a088e722eec11c8f06422b47a046c1a3e9",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.227755,
+        "bytes": 20106,
+        "bitRate": 131009
+      },
+      "sourcePcm": {
+        "frames": 52920,
+        "duration": 1.2,
+        "samplePeakDb": -7.243473,
+        "rmsDb": -23.256908,
+        "seamDelta": 0.001256
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.001587,
+        "trailingSilence": 0.064694,
+        "start": 0,
+        "end": 1.2,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 52920,
+        "duration": 1.2,
+        "samplePeakDb": -7.243473,
+        "rmsDb": -23.256912,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -23.29,
+        "truePeakDb": -7.23,
+        "rangeLu": 0,
+        "thresholdLufs": -33.29,
+        "targetOffsetDb": 0
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": 3.243473,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 1.227755,
+        "bytes": 15090,
+        "bitRate": 98325
+      },
+      "outputPcm": {
+        "frames": 52920,
+        "duration": 1.2,
+        "samplePeakDb": -4.429343,
+        "rmsDb": -20.458439,
+        "seamDelta": 0.00001
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.49,
+        "truePeakDb": -4.42,
+        "rangeLu": 0,
+        "thresholdLufs": -30.49,
+        "targetOffsetDb": 0
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/hit",
+      "source": "assets/audio/masters/sfx-hit.mp3",
+      "output": "public/audio/sfx/hit.mp3",
+      "sourceSha256": "2ca1251c5fd7367243a403a555a0ae8bd312e3469daef838eed1c0194e27a884",
+      "outputSha256": "d87aecf33f1165b834a4e2392a0b1cc2a82c095476d0a65f17c3d2527ad71458",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 0.731429,
+        "bytes": 12164,
+        "bitRate": 133043
+      },
+      "sourcePcm": {
+        "frames": 29999,
+        "duration": 0.680249,
+        "samplePeakDb": -13.09669,
+        "rmsDb": -27.277616,
+        "seamDelta": 0.064477
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0.000272,
+        "start": 0,
+        "end": 0.680249,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 29999,
+        "duration": 0.680249,
+        "samplePeakDb": -13.09669,
+        "rmsDb": -27.332573,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -32.21,
+        "truePeakDb": -13.09,
+        "rangeLu": 0,
+        "thresholdLufs": -42.21,
+        "targetOffsetDb": 1.11
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": 9.09669,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.731429,
+        "bytes": 9134,
+        "bitRate": 99903
+      },
+      "outputPcm": {
+        "frames": 29999,
+        "duration": 0.680249,
+        "samplePeakDb": -4.358648,
+        "rmsDb": -18.663543,
+        "seamDelta": 0.009059
+      },
+      "outputLoudness": {
+        "integratedLufs": -23.51,
+        "truePeakDb": -4.33,
+        "rangeLu": 0,
+        "thresholdLufs": -33.51,
+        "targetOffsetDb": 1.21
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/coin",
+      "source": "assets/audio/masters/sfx-coin.mp3",
+      "output": "public/audio/sfx/coin.mp3",
+      "sourceSha256": "0a52328ee45addca8725f09a23995e5b16d18ebdf9306a61fc7028c100186a0a",
+      "outputSha256": "f709bddb944b250862d90b80c542fa10dd98b1d309028d6410c40b2e79278087",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 0.522449,
+        "bytes": 8821,
+        "bitRate": 135071
+      },
+      "sourcePcm": {
+        "frames": 21168,
+        "duration": 0.48,
+        "samplePeakDb": -13.211749,
+        "rmsDb": -22.080756,
+        "seamDelta": 0.123071
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0,
+        "start": 0,
+        "end": 0.48,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 21168,
+        "duration": 0.48,
+        "samplePeakDb": -13.696822,
+        "rmsDb": -22.174594,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -19.35,
+        "truePeakDb": -13.71,
+        "rangeLu": 0,
+        "thresholdLufs": -29.35,
+        "targetOffsetDb": 0.05
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": 9.696822,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.522449,
+        "bytes": 6626,
+        "bitRate": 101460
+      },
+      "outputPcm": {
+        "frames": 21168,
+        "duration": 0.48,
+        "samplePeakDb": -4.47704,
+        "rmsDb": -12.917049,
+        "seamDelta": 0.000775
+      },
+      "outputLoudness": {
+        "integratedLufs": -10.15,
+        "truePeakDb": -4.49,
+        "rangeLu": 0,
+        "thresholdLufs": -20.15,
+        "targetOffsetDb": -0.05
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/heart",
+      "source": "assets/audio/masters/sfx-heart.mp3",
+      "output": "public/audio/sfx/heart.mp3",
+      "sourceSha256": "b7e07f22ea979bd6cf12e898b1e36947804d28b99f4e554f32d3c76e1760f65a",
+      "outputSha256": "d19bda694b3cac01982cc7ee27ea929d81246608c1544b9d14c1452b3a90d9bb",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 0.914286,
+        "bytes": 15090,
+        "bitRate": 132037
+      },
+      "sourcePcm": {
+        "frames": 38808,
+        "duration": 0.88,
+        "samplePeakDb": -10.572285,
+        "rmsDb": -28.328887,
+        "seamDelta": 0.194847
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0,
+        "start": 0,
+        "end": 0.88,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 38808,
+        "duration": 0.88,
+        "samplePeakDb": -12.033573,
+        "rmsDb": -28.388879,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -25.78,
+        "truePeakDb": -11.97,
+        "rangeLu": 0,
+        "thresholdLufs": -35.78,
+        "targetOffsetDb": -0.01
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": 8.033573,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.914286,
+        "bytes": 11328,
+        "bitRate": 99119
+      },
+      "outputPcm": {
+        "frames": 38808,
+        "duration": 0.88,
+        "samplePeakDb": -4.481329,
+        "rmsDb": -20.820775,
+        "seamDelta": 0.009882
+      },
+      "outputLoudness": {
+        "integratedLufs": -18.18,
+        "truePeakDb": -4.42,
+        "rangeLu": 0,
+        "thresholdLufs": -28.18,
+        "targetOffsetDb": 0
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/bounce",
+      "source": "assets/audio/masters/sfx-bounce.mp3",
+      "output": "public/audio/sfx/bounce.mp3",
+      "sourceSha256": "250f0a0d200f14a8b3165e70de388961e274adf8aca09816c713901c127db8b3",
+      "outputSha256": "f0990953cedf3b776282e0e0c701561c96822c904b1a5a3b8738e53fbdcbdc69",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.044898,
+        "bytes": 17180,
+        "bitRate": 131534
+      },
+      "sourcePcm": {
+        "frames": 44100,
+        "duration": 1,
+        "samplePeakDb": 3.494519,
+        "rmsDb": -18.085654,
+        "seamDelta": 0.099794
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0,
+        "start": 0,
+        "end": 1,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 44100,
+        "duration": 1,
+        "samplePeakDb": 3.494519,
+        "rmsDb": -18.137351,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -17.61,
+        "truePeakDb": 3.58,
+        "rangeLu": 0,
+        "thresholdLufs": -29.01,
+        "targetOffsetDb": 3.16
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -7.494519,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 1.044898,
+        "bytes": 12896,
+        "bitRate": 98734
+      },
+      "outputPcm": {
+        "frames": 44100,
+        "duration": 1,
+        "samplePeakDb": -4.306867,
+        "rmsDb": -26.09275,
+        "seamDelta": 0.001483
+      },
+      "outputLoudness": {
+        "integratedLufs": -25.51,
+        "truePeakDb": -4.32,
+        "rangeLu": 0,
+        "thresholdLufs": -36.91,
+        "targetOffsetDb": 3.19
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/gate",
+      "source": "assets/audio/masters/sfx-gate.mp3",
+      "output": "public/audio/sfx/gate.mp3",
+      "sourceSha256": "f20da6d74a5f6a581059c77f4bb9f8ce10ebaa71dab5c64bd78dd77a5f2cd2ff",
+      "outputSha256": "1dc10fa0e2e4391590d98ddfac3a8003a15570cab6b69d96819273127a642708",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.227755,
+        "bytes": 20106,
+        "bitRate": 131009
+      },
+      "sourcePcm": {
+        "frames": 52920,
+        "duration": 1.2,
+        "samplePeakDb": 3.198345,
+        "rmsDb": -12.298013,
+        "seamDelta": 0.088607
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0.000068,
+        "start": 0,
+        "end": 1.2,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 52920,
+        "duration": 1.2,
+        "samplePeakDb": 3.198345,
+        "rmsDb": -12.307754,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -11.27,
+        "truePeakDb": 3.2,
+        "rangeLu": 0,
+        "thresholdLufs": -22.34,
+        "targetOffsetDb": -0.01
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -7.198345,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 1.227755,
+        "bytes": 15090,
+        "bitRate": 98325
+      },
+      "outputPcm": {
+        "frames": 52920,
+        "duration": 1.2,
+        "samplePeakDb": -4.439511,
+        "rmsDb": -19.951382,
+        "seamDelta": 0.000356
+      },
+      "outputLoudness": {
+        "integratedLufs": -18.93,
+        "truePeakDb": -4.44,
+        "rangeLu": 0,
+        "thresholdLufs": -30.01,
+        "targetOffsetDb": -0.04
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/window",
+      "source": "assets/audio/masters/sfx-window.mp3",
+      "output": "public/audio/sfx/window.mp3",
+      "sourceSha256": "0bd22fdf60c37d11ec22d845a0ccfd5c8f952a08a1a4c37a65e710b852085a34",
+      "outputSha256": "0cb683ee8b93d12b33275cfbe6310b0461450bafa115de3851887ed42c47209d",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.306122,
+        "bytes": 21359,
+        "bitRate": 130823
+      },
+      "sourcePcm": {
+        "frames": 56448,
+        "duration": 1.28,
+        "samplePeakDb": 3.072429,
+        "rmsDb": -16.097537,
+        "seamDelta": 0.021639
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0.170204,
+        "start": 0,
+        "end": 1.179796,
+        "removed": 0.100204,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 52029,
+        "duration": 1.179796,
+        "samplePeakDb": 3.072429,
+        "rmsDb": -15.743998,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -19.1,
+        "truePeakDb": 3.07,
+        "rangeLu": 0,
+        "thresholdLufs": -29.62,
+        "targetOffsetDb": 4.15
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -7.072429,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 1.227755,
+        "bytes": 15090,
+        "bitRate": 98325
+      },
+      "outputPcm": {
+        "frames": 52029,
+        "duration": 1.179796,
+        "samplePeakDb": -4.600462,
+        "rmsDb": -23.261391,
+        "seamDelta": 0.000726
+      },
+      "outputLoudness": {
+        "integratedLufs": -26.63,
+        "truePeakDb": -4.6,
+        "rangeLu": 0,
+        "thresholdLufs": -37.16,
+        "targetOffsetDb": 4.03
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/win",
+      "source": "assets/audio/masters/sfx-win.mp3",
+      "output": "public/audio/sfx/win.mp3",
+      "sourceSha256": "985303fceb5b97f980fd33c65d406056c9f2c9a1d544dcd55679b7c0ab5c4e4d",
+      "outputSha256": "762473c86ee58489614021ce350924c8721a920e0755671f38eb6286a250fbf2",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 2.586122,
+        "bytes": 41839,
+        "bitRate": 129426
+      },
+      "sourcePcm": {
+        "frames": 112896,
+        "duration": 2.56,
+        "samplePeakDb": 0.98945,
+        "rmsDb": -17.020207,
+        "seamDelta": 0.186199
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 1.042721,
+        "start": 0,
+        "end": 1.587279,
+        "removed": 0.972721,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 69999,
+        "duration": 1.587279,
+        "samplePeakDb": 0.98945,
+        "rmsDb": -14.949088,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -10.69,
+        "truePeakDb": 0.99,
+        "rangeLu": 0,
+        "thresholdLufs": -23,
+        "targetOffsetDb": -0.01
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -4.98945,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 1.619592,
+        "bytes": 19792,
+        "bitRate": 97762
+      },
+      "outputPcm": {
+        "frames": 69999,
+        "duration": 1.587279,
+        "samplePeakDb": -4.438111,
+        "rmsDb": -20.3786,
+        "seamDelta": 0.010302
+      },
+      "outputLoudness": {
+        "integratedLufs": -16.11,
+        "truePeakDb": -4.44,
+        "rangeLu": 0,
+        "thresholdLufs": -28.42,
+        "targetOffsetDb": 0.01
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/fail",
+      "source": "assets/audio/masters/sfx-fail.mp3",
+      "output": "public/audio/sfx/fail.mp3",
+      "sourceSha256": "326591df5313d5e6288670babcf008ef9587564878510214065ea6b123786153",
+      "outputSha256": "ef8c39141bffc919b0aa7bda0c62f84179bc201e24b3748fc4a79a8eaa41034f",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.802449,
+        "bytes": 29301,
+        "bitRate": 130049
+      },
+      "sourcePcm": {
+        "frames": 77616,
+        "duration": 1.76,
+        "samplePeakDb": 3.285283,
+        "rmsDb": -11.011259,
+        "seamDelta": 0.041739
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0.54585,
+        "start": 0,
+        "end": 1.28415,
+        "removed": 0.47585,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 56631,
+        "duration": 1.28415,
+        "samplePeakDb": 3.285283,
+        "rmsDb": -9.642387,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -7.25,
+        "truePeakDb": 3.28,
+        "rangeLu": 0,
+        "thresholdLufs": -17.73,
+        "targetOffsetDb": 0.02
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -7.285283,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 1.332245,
+        "bytes": 16344,
+        "bitRate": 98144
+      },
+      "outputPcm": {
+        "frames": 56631,
+        "duration": 1.28415,
+        "samplePeakDb": -3.971859,
+        "rmsDb": -17.36343,
+        "seamDelta": 0.000031
+      },
+      "outputLoudness": {
+        "integratedLufs": -14.99,
+        "truePeakDb": -3.96,
+        "rangeLu": 0,
+        "thresholdLufs": -25.47,
+        "targetOffsetDb": -0.01
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/goose",
+      "source": "assets/audio/masters/sfx-goose.mp3",
+      "output": "public/audio/sfx/goose.mp3",
+      "sourceSha256": "5f0bf299dc392b66afbeab6118a2edd059593e4c75ecfb4b0d8b92bac5409dc0",
+      "outputSha256": "94b1b6dd375d8f90eb6446e8a60a99b609db2b1fc0171c0465d9e0e3fce5057d",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.227755,
+        "bytes": 20106,
+        "bitRate": 131009
+      },
+      "sourcePcm": {
+        "frames": 52920,
+        "duration": 1.2,
+        "samplePeakDb": -2.327982,
+        "rmsDb": -24.216787,
+        "seamDelta": 0.031045
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0.724898,
+        "start": 0,
+        "end": 0.545102,
+        "removed": 0.654898,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 24039,
+        "duration": 0.545102,
+        "samplePeakDb": -2.327982,
+        "rmsDb": -20.797065,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -18,
+        "truePeakDb": -2.21,
+        "rangeLu": 0,
+        "thresholdLufs": -28,
+        "targetOffsetDb": 0
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -1.672018,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.574694,
+        "bytes": 7253,
+        "bitRate": 100965
+      },
+      "outputPcm": {
+        "frames": 24039,
+        "duration": 0.545102,
+        "samplePeakDb": -4.412811,
+        "rmsDb": -22.916118,
+        "seamDelta": 0.000112
+      },
+      "outputLoudness": {
+        "integratedLufs": -20.15,
+        "truePeakDb": -4.29,
+        "rangeLu": 0,
+        "thresholdLufs": -30.15,
+        "targetOffsetDb": 0
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/land",
+      "source": "assets/audio/masters/sfx-land.mp3",
+      "output": "public/audio/sfx/land.mp3",
+      "sourceSha256": "e7bb69d90c325e25f4416a3076485b2a52d3ed9c4da6f589c443700f3ab8f7d1",
+      "outputSha256": "aa1eb2db3a4860c2e646d813633b2989294a7eccac2c487a551880abc83a791f",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 0.522449,
+        "bytes": 8821,
+        "bitRate": 135071
+      },
+      "sourcePcm": {
+        "frames": 21168,
+        "duration": 0.48,
+        "samplePeakDb": -7.18289,
+        "rmsDb": -25.350984,
+        "seamDelta": 0.036346
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0,
+        "start": 0,
+        "end": 0.48,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 21168,
+        "duration": 0.48,
+        "samplePeakDb": -7.18289,
+        "rmsDb": -25.432124,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -21.95,
+        "truePeakDb": -6.94,
+        "rangeLu": 0,
+        "thresholdLufs": -31.95,
+        "targetOffsetDb": 0.05
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -8,
+        "gainDb": -0.81711,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.522449,
+        "bytes": 6626,
+        "bitRate": 101460
+      },
+      "outputPcm": {
+        "frames": 21168,
+        "duration": 0.48,
+        "samplePeakDb": -8.381247,
+        "rmsDb": -26.62838,
+        "seamDelta": 0.023672
+      },
+      "outputLoudness": {
+        "integratedLufs": -23.15,
+        "truePeakDb": -8.07,
+        "rangeLu": 0,
+        "thresholdLufs": -33.15,
+        "targetOffsetDb": 0.05
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/ready",
+      "source": "assets/audio/masters/sfx-ready.mp3",
+      "output": "public/audio/sfx/ready.mp3",
+      "sourceSha256": "e397de8e2cb4ba3fe0bd32e63d1c14f7505e1758f4062df2f9ebeb6c29f27e1d",
+      "outputSha256": "264bef1c9d54d80048b5907a74f532c1cdeac6d4ff44aad7346f27b6f5c5249c",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 1.515102,
+        "bytes": 24703,
+        "bitRate": 130436
+      },
+      "sourcePcm": {
+        "frames": 65268,
+        "duration": 1.48,
+        "samplePeakDb": 3.257298,
+        "rmsDb": -11.866321,
+        "seamDelta": 0.024099
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0,
+        "trailingSilence": 0,
+        "start": 0,
+        "end": 1.48,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 65268,
+        "duration": 1.48,
+        "samplePeakDb": 3.257298,
+        "rmsDb": -11.866482,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -6.9,
+        "truePeakDb": 3.5,
+        "rangeLu": 0,
+        "thresholdLufs": -19.9,
+        "targetOffsetDb": 0
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -4,
+        "gainDb": -7.257298,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 1.515102,
+        "bytes": 18538,
+        "bitRate": 97883
+      },
+      "outputPcm": {
+        "frames": 65268,
+        "duration": 1.48,
+        "samplePeakDb": -5.142648,
+        "rmsDb": -19.58163,
+        "seamDelta": 0.000195
+      },
+      "outputLoudness": {
+        "integratedLufs": -14.61,
+        "truePeakDb": -4.97,
+        "rangeLu": 0,
+        "thresholdLufs": -27.15,
+        "targetOffsetDb": 0.01
+      },
+      "warnings": []
+    },
+    {
+      "id": "sfx/paws",
+      "source": "assets/audio/masters/sfx-paws.mp3",
+      "output": "public/audio/sfx/paws.mp3",
+      "sourceSha256": "281a831bd604bf896759ed777497c0d149f58b07f0b63df61b4dd7277420c262",
+      "outputSha256": "661c29c781380fab7f204c3580f51a3938fafba5b4070e670337cf45fe75c4fa",
+      "loop": false,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 0.522449,
+        "bytes": 8821,
+        "bitRate": 135071
+      },
+      "sourcePcm": {
+        "frames": 21168,
+        "duration": 0.48,
+        "samplePeakDb": 0.893217,
+        "rmsDb": -28.312601,
+        "seamDelta": 0.000667
+      },
+      "trim": {
+        "thresholdDb": -50,
+        "leadingSilence": 0.024921,
+        "trailingSilence": 0.323537,
+        "start": 0,
+        "end": 0.226463,
+        "removed": 0.253537,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0,
+      "loopDurationReductionSeconds": 0,
+      "normalizationInputPcm": {
+        "frames": 9987,
+        "duration": 0.226463,
+        "samplePeakDb": 0.893217,
+        "rmsDb": -25.050404,
+        "seamDelta": 0
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": null,
+        "truePeakDb": 0.93,
+        "rangeLu": 0,
+        "thresholdLufs": -70,
+        "targetOffsetDb": null
+      },
+      "normalization": {
+        "method": "sample-peak",
+        "targetPeakDb": -8,
+        "gainDb": -8.893217,
+        "maximumBoostDb": 12
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 1,
+        "duration": 0.261224,
+        "bytes": 3492,
+        "bitRate": 106942
+      },
+      "outputPcm": {
+        "frames": 9987,
+        "duration": 0.226463,
+        "samplePeakDb": -8.344115,
+        "rmsDb": -34.331835,
+        "seamDelta": 0.000005
+      },
+      "outputLoudness": {
+        "integratedLufs": null,
+        "truePeakDb": -8.33,
+        "rangeLu": 0,
+        "thresholdLufs": -70,
+        "targetOffsetDb": null
+      },
+      "warnings": []
+    },
+    {
+      "id": "ambience/house",
+      "source": "assets/audio/masters/ambience-house.mp3",
+      "output": "public/audio/ambience/house.mp3",
+      "sourceSha256": "b009896b23e7116af5efbaceccfcffa13f048bf166a5cc31dd339c313e1b7b08",
+      "outputSha256": "754871d0714d30637c923f80aea1c6b04363e45d33167c2a53be772f69dcc0bb",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 10.03102,
+        "bytes": 160958,
+        "bitRate": 128368
+      },
+      "sourcePcm": {
+        "frames": 441000,
+        "duration": 10,
+        "samplePeakDb": -16.168613,
+        "rmsDb": -48.478869,
+        "seamDelta": 0.000006
+      },
+      "trim": {
+        "thresholdDb": -66.478869,
+        "leadingSilence": 0.00127,
+        "trailingSilence": 0.000068,
+        "start": 0,
+        "end": 10,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 439236,
+        "duration": 9.96,
+        "samplePeakDb": -16.168613,
+        "rmsDb": -48.461681,
+        "seamDelta": 0.000028
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -42.09,
+        "truePeakDb": -16.17,
+        "rangeLu": 3.7,
+        "thresholdLufs": -53.88,
+        "targetOffsetDb": -1.9
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -28,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 10.004898,
+        "bytes": 120416,
+        "bitRate": 96285
+      },
+      "outputPcm": {
+        "frames": 439236,
+        "duration": 9.96,
+        "samplePeakDb": -2.543375,
+        "rmsDb": -34.80471,
+        "seamDelta": 0.000079
+      },
+      "outputLoudness": {
+        "integratedLufs": -28.54,
+        "truePeakDb": -2.54,
+        "rangeLu": 3.7,
+        "thresholdLufs": -40.47,
+        "targetOffsetDb": -1.86
+      },
+      "warnings": []
+    },
+    {
+      "id": "ambience/woods",
+      "source": "assets/audio/masters/ambience-woods.mp3",
+      "output": "public/audio/ambience/woods.mp3",
+      "sourceSha256": "5b0d286bcd59e1e379cf5de21d3b2848d0b0c49e4eb6afe39c7960250ed778ce",
+      "outputSha256": "909289b25b46634c3a46bbc01a4811c9085498e61f662e01f6180ea4e7341774",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 10.03102,
+        "bytes": 160958,
+        "bitRate": 128368
+      },
+      "sourcePcm": {
+        "frames": 441000,
+        "duration": 10,
+        "samplePeakDb": -26.716203,
+        "rmsDb": -53.332586,
+        "seamDelta": 0.001676
+      },
+      "trim": {
+        "thresholdDb": -71.332586,
+        "leadingSilence": 0,
+        "trailingSilence": 0,
+        "start": 0,
+        "end": 10,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 439236,
+        "duration": 9.96,
+        "samplePeakDb": -26.716203,
+        "rmsDb": -53.317779,
+        "seamDelta": 0.001885
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -47.39,
+        "truePeakDb": -26.63,
+        "rangeLu": 5.5,
+        "thresholdLufs": -57.39,
+        "targetOffsetDb": -1.09
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -28,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 10.004898,
+        "bytes": 120416,
+        "bitRate": 96285
+      },
+      "outputPcm": {
+        "frames": 439236,
+        "duration": 9.96,
+        "samplePeakDb": -7.704245,
+        "rmsDb": -34.455097,
+        "seamDelta": 0.009649
+      },
+      "outputLoudness": {
+        "integratedLufs": -28.52,
+        "truePeakDb": -7.65,
+        "rangeLu": 6,
+        "thresholdLufs": -38.52,
+        "targetOffsetDb": -1.27
+      },
+      "warnings": []
+    },
+    {
+      "id": "ambience/zoo",
+      "source": "assets/audio/masters/ambience-zoo.mp3",
+      "output": "public/audio/ambience/zoo.mp3",
+      "sourceSha256": "8d2fe44235e5b8d39f6dcc7ec4eef8d3398b42b95c7d46710c8a19caf9d1bec5",
+      "outputSha256": "8222caa419f11d76de53731963ead7a3dd937484be6db55c14cd062fc08583c5",
+      "loop": true,
+      "sourceFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 10.03102,
+        "bytes": 160958,
+        "bitRate": 128368
+      },
+      "sourcePcm": {
+        "frames": 441000,
+        "duration": 10,
+        "samplePeakDb": -15.854487,
+        "rmsDb": -35.791622,
+        "seamDelta": 0.009944
+      },
+      "trim": {
+        "thresholdDb": -53.791622,
+        "leadingSilence": 0,
+        "trailingSilence": 0,
+        "start": 0,
+        "end": 10,
+        "removed": 0,
+        "silent": false
+      },
+      "circularOverlapSeconds": 0.04,
+      "loopDurationReductionSeconds": 0.04,
+      "normalizationInputPcm": {
+        "frames": 439236,
+        "duration": 9.96,
+        "samplePeakDb": -15.854487,
+        "rmsDb": -35.790565,
+        "seamDelta": 0.005785
+      },
+      "normalizationInputLoudness": {
+        "integratedLufs": -32.46,
+        "truePeakDb": -15.83,
+        "rangeLu": 1.9,
+        "thresholdLufs": -42.46,
+        "targetOffsetDb": 0.31
+      },
+      "normalization": {
+        "method": "two-pass-loudnorm",
+        "targetIntegratedLufs": -28,
+        "targetTruePeakDb": -2,
+        "targetRangeLu": 7
+      },
+      "outputFormat": {
+        "codec": "mp3",
+        "sampleRate": 44100,
+        "channels": 2,
+        "duration": 10.004898,
+        "bytes": 120416,
+        "bitRate": 96285
+      },
+      "outputPcm": {
+        "frames": 439236,
+        "duration": 9.96,
+        "samplePeakDb": -11.634602,
+        "rmsDb": -31.7115,
+        "seamDelta": 0.008333
+      },
+      "outputLoudness": {
+        "integratedLufs": -28.32,
+        "truePeakDb": -11.55,
+        "rangeLu": 1.8,
+        "thresholdLufs": -38.32,
+        "targetOffsetDb": 0.28
+      },
+      "warnings": []
+    }
+  ],
+  "missing": [],
+  "warnings": [],
+  "processedAssets": 0,
+  "reusedAssets": 28,
+  "preparedAssets": 28,
+  "outputBytes": 4553622
+}

@@ -17,7 +17,11 @@
     "test:pace": "node tests/action-pace.mjs",
     "art:branding": "node scripts/build-branding.mjs",
     "test:pwa": "node tests/pwa.mjs",
-    "test:install": "node tests/install-share.mjs"
+    "test:install": "node tests/install-share.mjs",
+    "audio:generate": "node scripts/generate-audio.mjs",
+    "audio:prepare": "node scripts/prepare-audio.mjs",
+    "test:audio": "node tests/audio.mjs",
+    "test:audio-campaign": "node tests/audio-campaign.mjs"
   },
   "dependencies": {
     "three": "^0.180.0"

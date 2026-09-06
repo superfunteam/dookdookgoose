@@ -1,5 +1,5 @@
 import {chromium, expect} from '@playwright/test';
-import {mkdir} from 'node:fs/promises';
+import {mkdir, readFile} from 'node:fs/promises';
 
 const url = process.env.GAME_URL || 'http://localhost:5174/';
 await mkdir('output/qa', {recursive: true});
@@ -20,6 +20,8 @@ try {
   expect(cache.files).toContain('/index.html');
   expect(cache.files).toContain('/art/character-reference.png');
   expect(cache.files).not.toContain('/art/movement-reference.png');
+  const audioPlan = JSON.parse(await readFile('assets/audio/plan.json', 'utf8'));
+  for (const asset of audioPlan.assets) expect(cache.files).toContain(`/audio/${asset.kind}/${asset.name}.mp3`);
   const manifestResponse = await context.request.get(new URL('/manifest.webmanifest', url).href);
   expect(manifestResponse.ok()).toBe(true);
   const manifest = await manifestResponse.json();
@@ -52,6 +54,27 @@ try {
   await context.setOffline(true);
   await page.goto(new URL('/?source=homescreen', url).href);
   await expect(page.locator('[data-action="start"]')).toBeVisible();
+  const decodedAudio = await page.evaluate(async assets => {
+    const context = new AudioContext();
+    const results = [];
+    try {
+      for (const asset of assets) {
+        const response = await fetch(`/audio/${asset.kind}/${asset.name}.mp3`);
+        if (!response.ok) throw new Error('Missing offline audio: ' + asset.name);
+        const buffer = await context.decodeAudioData(await response.arrayBuffer());
+        let power = 0;
+        const channel = buffer.getChannelData(0);
+        for (let i = 0; i < channel.length; i += 32) power += channel[i] * channel[i];
+        results.push({id: asset.kind + '/' + asset.name, duration: buffer.duration, rms: Math.sqrt(power / Math.ceil(channel.length / 32))});
+      }
+    } finally { await context.close(); }
+    return results;
+  }, audioPlan.assets);
+  expect(decodedAudio).toHaveLength(28);
+  for (const audio of decodedAudio) {
+    expect(audio.duration, audio.id).toBeGreaterThan(.15);
+    expect(audio.rms, audio.id).toBeGreaterThan(.0001);
+  }
   await page.locator('[data-action="start"]').click();
   await page.locator('#player-name').fill('Offline');
   await page.locator('button[type="submit"]').click();
@@ -65,6 +88,6 @@ try {
   await expect(page.locator('#stats')).toContainText('30 BONES');
   expect(await page.locator('canvas').count()).toBe(1);
   expect(errors).toEqual([]);
-  console.log('Production icons, metadata, responsive controls, service worker, offline launch/gameplay/lab PASS.', cache);
+  console.log('Production icons, metadata, responsive controls, all 28 offline audio decodes, service worker, offline launch/gameplay/lab PASS.', cache);
   await context.close();
 } finally { await browser.close(); }

@@ -1,0 +1,210 @@
+{
+  "provider": "ElevenLabs",
+  "musicModel": "music_v2",
+  "soundModel": "eleven_text_to_sound_v2",
+  "assets": [
+    {
+      "name": "title",
+      "title": "A Very Urgent Little Adventure",
+      "duration": 40,
+      "prompt": "Original instrumental soundtrack for Dook, Dook, Goose!, a joyful 1998-style low-poly console game about a tiny ferret rescuing a goose who actually just wants gelato. Premium playful PS1-era sample-based game score: expressive sampled instruments, warm compact drums, bright mallet accents, charming synthesized bass, memorable original melody. No vocals, speech, animal noises, modern EDM drops, harsh distortion, or imitation of any existing game or artist. Compact cohesive arrangement, immediately in the groove, sustain energy throughout, loop-friendly ending with no fade-out or grand finale. Welcoming title-screen theme, 128 BPM, sunny C major, bouncy pizzicato strings, cheeky clarinet, marimba, brushed breakbeat and a tiny heroic horn melody. Mischievous warm woodland charm; a catchy three-note rising 'dook-dook-goose' motif answered by a skipping phrase.",
+      "kind": "music",
+      "loop": true
+    },
+    {
+      "name": "story",
+      "title": "Behind Bars. Hurry.",
+      "duration": 36,
+      "prompt": "Original instrumental soundtrack for Dook, Dook, Goose!, a joyful 1998-style low-poly console game about a tiny ferret rescuing a goose who actually just wants gelato. Premium playful PS1-era sample-based game score: expressive sampled instruments, warm compact drums, bright mallet accents, charming synthesized bass, memorable original melody. No vocals, speech, animal noises, modern EDM drops, harsh distortion, or imitation of any existing game or artist. Compact cohesive arrangement, immediately in the groove, sustain energy throughout, loop-friendly ending with no fade-out or grand finale. Quiet comedic mystery dialogue underscore, 108 BPM, plucked pizzicato bass, curious bassoon and clarinet fragments, toy piano, gentle ticking rim percussion. An exaggerated tiny rescue mission, warm and curious rather than scary. Sparse melody and roomy arrangement so text dialogue has breathing room; anticipation with a mischievous wink.",
+      "kind": "music",
+      "loop": true
+    },
+    {
+      "name": "house",
+      "title": "Breaking Out",
+      "duration": 40,
+      "prompt": "Original instrumental soundtrack for Dook, Dook, Goose!, a joyful 1998-style low-poly console game about a tiny ferret rescuing a goose who actually just wants gelato. Premium playful PS1-era sample-based game score: expressive sampled instruments, warm compact drums, bright mallet accents, charming synthesized bass, memorable original melody. No vocals, speech, animal noises, modern EDM drops, harsh distortion, or imitation of any existing game or artist. Compact cohesive arrangement, immediately in the groove, sustain energy throughout, loop-friendly ending with no fade-out or grand finale. Fast energetic house escape chase, 168 BPM, springy slap-like synth bass, clattering woodblock groove, plucked strings, xylophone runs, cheeky brass stabs, punchy little sampled drum breaks. Tiny paws bounding through chair legs, sliding under furniture, jumping a window. Urgent, buoyant, very physical hopping rhythm. Melodic cartoon caper energy from the very first beat.",
+      "kind": "music",
+      "loop": true
+    },
+    {
+      "name": "woods",
+      "title": "Mushroom Airlines",
+      "duration": 40,
+      "prompt": "Original instrumental soundtrack for Dook, Dook, Goose!, a joyful 1998-style low-poly console game about a tiny ferret rescuing a goose who actually just wants gelato. Premium playful PS1-era sample-based game score: expressive sampled instruments, warm compact drums, bright mallet accents, charming synthesized bass, memorable original melody. No vocals, speech, animal noises, modern EDM drops, harsh distortion, or imitation of any existing game or artist. Compact cohesive arrangement, immediately in the groove, sustain energy throughout, loop-friendly ending with no fade-out or grand finale. Fast joyful forest adventure chase, 176 BPM, earthy hand percussion and a driving light breakbeat, dancing wooden flute, marimba, spry bassline, shimmering little bell arpeggios. Ferret bounds over roots, orange mushrooms launch him into a full barrel roll. Sun-dappled wonder and exuberant momentum; unmistakably an action level with warm natural colors.",
+      "kind": "music",
+      "loop": true
+    },
+    {
+      "name": "zoo",
+      "title": "Excuse Me, Important Ferret",
+      "duration": 40,
+      "prompt": "Original instrumental soundtrack for Dook, Dook, Goose!, a joyful 1998-style low-poly console game about a tiny ferret rescuing a goose who actually just wants gelato. Premium playful PS1-era sample-based game score: expressive sampled instruments, warm compact drums, bright mallet accents, charming synthesized bass, memorable original melody. No vocals, speech, animal noises, modern EDM drops, harsh distortion, or imitation of any existing game or artist. Compact cohesive arrangement, immediately in the groove, sustain energy throughout, loop-friendly ending with no fade-out or grand finale. Fast comic zoo rescue chase, 164 BPM, funky walking synth bass, clipped brass hits, syncopated xylophone, bongos and punchy sampled drums. Playfully pompous little parade mixed with a frantic caper. Increasing sense that the rescue is suspiciously silly. Strong propulsive rhythm, short catchy call-and-response motif, big grinning energy.",
+      "kind": "music",
+      "loop": true
+    },
+    {
+      "name": "ending",
+      "title": "Two Scoops, Zero Rescues",
+      "duration": 40,
+      "prompt": "Original instrumental soundtrack for Dook, Dook, Goose!, a joyful 1998-style low-poly console game about a tiny ferret rescuing a goose who actually just wants gelato. Premium playful PS1-era sample-based game score: expressive sampled instruments, warm compact drums, bright mallet accents, charming synthesized bass, memorable original melody. No vocals, speech, animal noises, modern EDM drops, harsh distortion, or imitation of any existing game or artist. Compact cohesive arrangement, immediately in the groove, sustain energy throughout, loop-friendly ending with no fade-out or grand finale. Heartwarming gelato reunion and end credits, 116 BPM, breezy small-band swing, soft brushed drums, ukulele-like plucked strings, vibraphone, mellow clarinet, warm bass. Smile-inducing relaxed payoff after an absurdly urgent adventure. A cozy sunny afternoon with your best friend, celebratory without being bombastic, affectionate little comedic turns.",
+      "kind": "music",
+      "loop": true
+    },
+    {
+      "name": "setback",
+      "title": "Oh, Dook",
+      "duration": 16,
+      "prompt": "Original instrumental soundtrack for Dook, Dook, Goose!, a joyful 1998-style low-poly console game about a tiny ferret rescuing a goose who actually just wants gelato. Premium playful PS1-era sample-based game score: expressive sampled instruments, warm compact drums, bright mallet accents, charming synthesized bass, memorable original melody. No vocals, speech, animal noises, modern EDM drops, harsh distortion, or imitation of any existing game or artist. Compact cohesive arrangement, immediately in the groove, sustain energy throughout, loop-friendly ending with no fade-out or grand finale. Gentle comic retry-screen theme, 92 BPM, descending bassoon phrase answered by a hopeful ascending toy-piano figure, plucked double bass, soft woodblock taps. An adorable small setback, optimistic and gently silly, ready to try again. No sadness or big impact, keep the music very light and spacious.",
+      "kind": "music",
+      "loop": true
+    },
+    {
+      "name": "click",
+      "kind": "sfx",
+      "duration": 0.5,
+      "loop": false,
+      "prompt": "A tiny satisfying wooden button click with a soft bright bubble pop. Very brief, friendly tactile menu confirmation. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "message",
+      "kind": "sfx",
+      "duration": 1,
+      "loop": false,
+      "prompt": "A friendly urgent retro pocket pager chirps two bright notes then a tiny paper-envelope flutter. Cute message notification. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "jump",
+      "kind": "sfx",
+      "duration": 0.7,
+      "loop": false,
+      "prompt": "A tiny agile animal springs upward: quick soft paw push, light rising airy zip and springy little squeak, compact and joyful. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "roll",
+      "kind": "sfx",
+      "duration": 1.2,
+      "loop": false,
+      "prompt": "A fast circular aerial barrel-roll whoosh sweeps around then a sparkling little ascending flourish. Exuberant tiny acrobat, one revolution, airy not explosive. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "slide",
+      "kind": "sfx",
+      "duration": 0.8,
+      "loop": false,
+      "prompt": "Soft fur and tiny paws skitter and swish rapidly across a wooden surface into a short smooth slide, light cloth rustle, comic small animal agility. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "dook",
+      "kind": "sfx",
+      "duration": 1.2,
+      "loop": false,
+      "prompt": "Close-up authentic happy domestic ferret dooking: two or three soft breathy low clucking chuckles, 'dook-dook', playful excited animal chatter. Gentle throaty little clucks, not a squealing toy, not a human voice, not a dog bark. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "hit",
+      "kind": "sfx",
+      "duration": 0.7,
+      "loop": false,
+      "prompt": "One immediate, clearly audible cartoon wooden BONK with a rounded hollow knock and a brief springy rubber wobble tail. A small game character harmlessly bumps furniture. Punchy and crisp, medium strong volume, comical not painful. Close-up isolated sound, no music, speech, background noise or silence."
+    },
+    {
+      "name": "coin",
+      "kind": "sfx",
+      "duration": 0.5,
+      "loop": false,
+      "prompt": "One crisp bright golden collectible chime, two tiny upward bell notes and a delicate sparkle, very short and satisfying. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "heart",
+      "kind": "sfx",
+      "duration": 0.9,
+      "loop": false,
+      "prompt": "A warm little magical recovery shimmer, two soft rising celesta-like chimes with a rounded gentle bubble heartbeat pop. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "bounce",
+      "kind": "sfx",
+      "duration": 1,
+      "loop": false,
+      "prompt": "A plump springy mushroom compresses with a soft rubber boing and releases upward in a joyous quick ascending sproing. Organic, bouncy, comical. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "gate",
+      "kind": "sfx",
+      "duration": 1.2,
+      "loop": false,
+      "prompt": "A small zoo gate latch clacks open, followed by a light squeaky metal hinge swinging and a gentle wooden clunk. Short friendly comic machinery. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "window",
+      "kind": "sfx",
+      "duration": 1.3,
+      "loop": false,
+      "prompt": "A tiny animal swooshes through an already open window, fluttering curtains and a light wooden sash rattle, landing with a soft leafy rustle. No glass breakage. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "win",
+      "kind": "sfx",
+      "duration": 2.6,
+      "loop": false,
+      "prompt": "A joyful miniature game victory fanfare: three rising bright brass-and-bell notes, a little snare flourish and warm resolving sparkle. Short original triumphant cue. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "fail",
+      "kind": "sfx",
+      "duration": 1.8,
+      "loop": false,
+      "prompt": "A gentle comic game setback sting: a little descending muted trombone wobble answered by a hopeful tiny bell plink. Funny and affectionate, not dramatic. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "goose",
+      "kind": "sfx",
+      "duration": 1.2,
+      "loop": false,
+      "prompt": "One friendly white goose gives two short relaxed nasal honks, gently quacky and personable, close up, calm rather than aggressive, no human speech. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "land",
+      "kind": "sfx",
+      "duration": 0.5,
+      "loop": false,
+      "prompt": "Four tiny furry paws land together softly with a compact padded patter and a little dust puff, quick and light, no heavy thud. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "ready",
+      "kind": "sfx",
+      "duration": 1.5,
+      "loop": false,
+      "prompt": "A quick energetic little starting cue, two springy wooden taps followed by a bright upward whistle-chime, a tiny race is starting now. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "paws",
+      "kind": "sfx",
+      "duration": 0.5,
+      "loop": false,
+      "prompt": "A very brief pair of tiny soft furry paw taps on firm earth, delicate light tap-tap, no heavy footsteps, subtly scuffling claws, close-miked. Isolated, immediate onset, short natural tail. No human speech or background noise."
+    },
+    {
+      "name": "house",
+      "duration": 10,
+      "prompt": "Seamless loop of a cozy wooden living room with clearly audible steady clock ticking, light curtain fabric fluttering in an open window, a few small wooden floor creaks and quiet air moving. Detailed close-up domestic room ambience. Consistent present sound level, not silence. No music, speech, heavy bangs or footsteps.",
+      "kind": "ambience",
+      "loop": true
+    },
+    {
+      "name": "woods",
+      "duration": 10,
+      "prompt": "Seamlessly looping sunlit woodland ambience, gentle leaves rustling, a few distant friendly small birds, very soft stream in the distance, light warm breeze. Quiet and spacious for a cheerful small-animal game. No music, speech, close loud calls or abrupt changes.",
+      "kind": "ambience",
+      "loop": true
+    },
+    {
+      "name": "zoo",
+      "duration": 10,
+      "prompt": "Seamlessly looping whimsical peaceful outdoor zoo park ambience, soft distant indistinct people murmurs with no intelligible speech, leaves in a light breeze and occasional far-away small bird chirps. Friendly sunny atmosphere, no loud animals, music, announcements or abrupt events.",
+      "kind": "ambience",
+      "loop": true
+    }
+  ]
+}
