@@ -28,7 +28,7 @@ Production builds emit `sw.js`. After the first successful online load and worke
 
 ## Deployment
 
-1. Run `npm run build` and upload the complete `dist/` directory to the root of **dookdookgoose.superfun.games**, served over HTTPS.
+1. On Netlify, the root `netlify.toml` runs `npm run build` with Node 22 and publishes `dist/`. For another host, upload the complete `dist/` directory to the root of **dookdookgoose.superfun.games**, served over HTTPS.
 2. Serve `index.html`, `character-lab.html`, and `sw.js` with `Cache-Control: no-cache` so updates can be checked. Hashed `/assets/` files can use `public, max-age=31536000, immutable`. Unhashed icons, manifest, and social art should revalidate.
 3. Serve `.webmanifest` as `application/manifest+json`, `.js` as JavaScript, and the image formats with their matching MIME types. Keep `/sw.js` at the domain root.
 4. Confirm the public homepage and `/social/og-image.jpg` are reachable without authentication before refreshing social-platform preview caches. Changes are prepared locally; this task does not configure DNS or publish to a hosting provider.

@@ -69,3 +69,9 @@ Production address: **https://dookdookgoose.superfun.games/**. The build include
 Seven instrumental scores cover the title, dialogue, three action chapters, gelato ending, and setbacks. Eighteen effects include ferret dooks, Goose honks, paw contacts, barrel rolls, slides, gates and the window escape; quiet ambience distinguishes each environment. The sound button mutes all audio, and the help panel has a separate music switch. Audio starts after interaction and pauses with gameplay or when the page is hidden.
 
 Prepared audio is checked in under `public/audio`, works offline after the first complete download, and makes no live API requests. See `docs/audio.md` for the soundtrack and optional generation/packaging commands. API credentials remain in ignored local environment files.
+
+## Deploy on Netlify
+
+The checked-in `netlify.toml` sets the build command to `npm run build`, publish directory to `dist`, and Node to version 22. Connect this repository's `main` branch and deploy normally. Netlify must publish the built `dist/` folder: publishing the repository root serves raw JavaScript imports and causes CSS module MIME errors and missing public assets.
+
+After deployment, the homepage should load a hashed `/assets/game-*.js` module, and `/favicon.ico`, `/manifest.webmanifest`, and `/sw.js` should return successfully. The character studio remains available at `/character-lab.html`. No SPA catch-all rewrite or API credentials are required.
