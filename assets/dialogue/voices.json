@@ -1,0 +1,20 @@
+{
+  "ferret": {
+    "voiceId": "IlmVEPYHrbA5Fu15UsD2",
+    "name": "Dook Dook Goose - Ferret",
+    "previewIndex": 0,
+    "model": "eleven_ttv_v3"
+  },
+  "goose": {
+    "voiceId": "trBvP16hHu2ElUTex922",
+    "name": "Dook Dook Goose - Goose Michael",
+    "previewIndex": 0,
+    "model": "eleven_ttv_v3"
+  },
+  "announcer": {
+    "voiceId": "2GwkwlYdmxWurLbuB50J",
+    "name": "Dook Dook Goose - Zoo Announcer",
+    "previewIndex": 0,
+    "model": "eleven_ttv_v3"
+  }
+}

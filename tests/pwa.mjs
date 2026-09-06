@@ -1,5 +1,6 @@
 import {chromium, expect} from '@playwright/test';
 import {mkdir, readFile} from 'node:fs/promises';
+import {DIALOGUE_LINES} from '../src/dialogue.js';
 
 const url = process.env.GAME_URL || 'http://localhost:5174/';
 await mkdir('output/qa', {recursive: true});
@@ -22,6 +23,8 @@ try {
   expect(cache.files).not.toContain('/art/movement-reference.png');
   const audioPlan = JSON.parse(await readFile('assets/audio/plan.json', 'utf8'));
   for (const asset of audioPlan.assets) expect(cache.files).toContain(`/audio/${asset.kind}/${asset.name}.mp3`);
+  const allAudio = [...audioPlan.assets, ...DIALOGUE_LINES.map(line => ({kind: 'dialogue', name: line.id}))];
+  for (const line of DIALOGUE_LINES) expect(cache.files).toContain(`/audio/dialogue/${line.id}.mp3`);
   const manifestResponse = await context.request.get(new URL('/manifest.webmanifest', url).href);
   expect(manifestResponse.ok()).toBe(true);
   const manifest = await manifestResponse.json();
@@ -69,8 +72,8 @@ try {
       }
     } finally { await context.close(); }
     return results;
-  }, audioPlan.assets);
-  expect(decodedAudio).toHaveLength(28);
+  }, allAudio);
+  expect(decodedAudio).toHaveLength(allAudio.length);
   for (const audio of decodedAudio) {
     expect(audio.duration, audio.id).toBeGreaterThan(.15);
     expect(audio.rms, audio.id).toBeGreaterThan(.0001);
@@ -88,6 +91,6 @@ try {
   await expect(page.locator('#stats')).toContainText('30 BONES');
   expect(await page.locator('canvas').count()).toBe(1);
   expect(errors).toEqual([]);
-  console.log('Production icons, metadata, responsive controls, all 28 offline audio decodes, service worker, offline launch/gameplay/lab PASS.', cache);
+  console.log('Production icons, metadata, responsive controls, all 51 offline audio decodes, service worker, offline launch/gameplay/lab PASS.', cache);
   await context.close();
 } finally { await browser.close(); }

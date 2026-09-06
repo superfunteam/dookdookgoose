@@ -20,6 +20,7 @@ const EFFECTS = {
   paws: { gain: .15, cooldown: .18, limit: 2, age: .25, variation: .07 },
 };
 const clamp = (value, low, high) => Math.min(high, Math.max(low, value));
+const dialogueKey = id => typeof id === 'string' && /^[a-zA-Z0-9][a-zA-Z0-9_-]{0,95}$/.test(id) ? `dialogue/${id}` : null;
 
 function sceneFor(mode, chapter) {
   if (mode === 'playing' || CHAPTERS.includes(mode)) return { music: CHAPTERS.includes(mode) ? mode : chapter, ambience: CHAPTERS.includes(mode) ? mode : chapter, score: .75, environment: .45 };
@@ -40,6 +41,7 @@ export class Sound {
     this._targets = new WeakMap(); this._requests = new Set(); this._pendingEffects = new Set(); this._effects = new Set(); this._loops = new Set();
     this._wanted = { music: { key: null, version: 0 }, ambience: { key: null, version: 0 } };
     this._used = 0; this._serial = 0; this._silenceEpoch = 0; this._voiceEpoch = 0;
+    this._dialogue = null; this._pendingDialogue = null;
     this._played = {}; this._errors = []; this._dropped = 0; this._warmed = false;
     this._visibility = () => { this._foreground = !document.hidden && this._focused; this._sync(); };
     this._blur = () => { this._focused = false; this._visibility(); };
@@ -87,11 +89,44 @@ export class Sound {
   }
   setScene(mode, level) { this.tick(mode, level); }
   voice(kind) { this.cancelVoice(); return this.effect(kind, { voice: true }); }
-  cancelVoice() {
+  cancelVoice(fade = .035) {
     this._voiceEpoch++;
+    this._pendingDialogue = null; this._stopDialogue(fade);
     for (const request of this._pendingEffects) if (request.voice) this._pendingEffects.delete(request);
-    for (const effect of this._effects) if (effect.voice) this._stopEffect(effect, .035);
+    for (const effect of this._effects) if (effect.voice) this._stopEffect(effect, fade);
     this._duck();
+  }
+
+  /** Resolves when speech starts, or false if cancelled/unavailable; never auto-advances dialogue. */
+  async dialogue(id, { nextId } = {}) {
+    this.cancelVoice();
+    const key = dialogueKey(id);
+    if (!key || !this._enabled || !this._foreground || this._mode === 'paused' || this._disposed) return false;
+    const started = this.start(), request = { id, epoch: this._voiceEpoch, silenceEpoch: this._silenceEpoch };
+    this._pendingDialogue = request;
+    const loading = this._load(key), nextKey = dialogueKey(nextId);
+    if (nextKey && nextKey !== key) void this._load(nextKey);
+    try {
+      const [buffer] = await Promise.all([loading, started]);
+      if (!buffer || this._pendingDialogue !== request || request.epoch !== this._voiceEpoch || request.silenceEpoch !== this._silenceEpoch || !this._canPlay() || this.ctx.state !== 'running') return false;
+      const source = this.ctx.createBufferSource(), gain = this.ctx.createGain();
+      source.buffer = buffer; gain.gain.value = 0; source.connect(gain); gain.connect(this._voiceBus);
+      const item = { id, source, gain, started: this.ctx.currentTime, duration: buffer.duration };
+      this._dialogue = item;
+      source.onended = () => {
+        if (this._dialogue === item) this._dialogue = null;
+        source.disconnect(); gain.disconnect(); this._duck();
+      };
+      source.start(); this._ramp(gain.gain, .95, .012);
+      this._played[key] = (this._played[key] || 0) + 1; this._duck(); return true;
+    } catch { return false; }
+    finally { if (this._pendingDialogue === request) this._pendingDialogue = null; }
+  }
+  _stopDialogue(fade) {
+    const item = this._dialogue;
+    if (!item) return;
+    this._dialogue = null; this._ramp(item.gain.gain, 0, fade, true);
+    try { item.source.stop(this.ctx.currentTime + fade); } catch { /* Already ended. */ }
   }
 
   async effect(kind, options = {}) {
@@ -131,6 +166,7 @@ export class Sound {
     if (!this._canPlay()) {
       if (!this._blocked) {
         this._blocked = true; this._silenceEpoch++;
+        this.cancelVoice(this._foreground ? .025 : 0);
         for (const item of this._effects) this._stopEffect(item, this._foreground ? .025 : 0);
         this._pendingEffects.clear(); this._ramp(this.master.gain, 0, this._foreground ? .035 : 0);
       }
@@ -157,7 +193,9 @@ export class Sound {
     if (seconds > 0) param.linearRampToValueAtTime(target, now + seconds); else param.setValueAtTime(target, now);
   }
   _duck() {
-    if (this._musicBus && !this._disposed) this._ramp(this._musicBus.gain, [...this._effects].some(item => item.duck) ? .46 : 1, .18);
+    if (!this._musicBus || this._disposed) return;
+    this._ramp(this._musicBus.gain, this._dialogue ? .24 : [...this._effects].some(item => item.duck) ? .46 : 1, .18);
+    this._ramp(this._ambienceBus.gain, this._dialogue ? .36 : 1, .18);
   }
   _stopEffect(item, fade) {
     this._effects.delete(item); this._ramp(item.gain.gain, 0, fade, true);
@@ -225,7 +263,7 @@ export class Sound {
   }
   _trimBuffers() {
     // Sources retain their own buffers during crossfades; the cache retains only recent chapters.
-    for (const [prefix, limit] of [['music/', 2], ['ambience/', 1]]) {
+    for (const [prefix, limit] of [['music/', 2], ['ambience/', 1], ['dialogue/', 3]]) {
       const entries = [...this._buffers].filter(([key]) => key.startsWith(prefix)).sort((a, b) => b[1].used - a[1].used);
       for (const [key] of entries.slice(limit)) this._buffers.delete(key);
     }
@@ -235,7 +273,7 @@ export class Sound {
   snapshot() {
     const audible = this._canPlay() && this.ctx?.state === 'running' && this._volume > 0;
     const current = [...this._loops].find(loop => loop.channel === 'music' && !loop.retiring && loop.key === this._wanted.music.key);
-    const decoded = { music: 0, ambience: 0, sfx: 0, bytes: 0 };
+    const decoded = { music: 0, ambience: 0, sfx: 0, dialogue: 0, bytes: 0 };
     for (const [key, { buffer }] of this._buffers) { decoded[key.split('/')[0]]++; decoded.bytes += buffer.length * buffer.numberOfChannels * 4; }
     return Object.freeze({
       enabled: this._enabled, music: this._music, volume: this._volume, unlocked: this._unlocked, foreground: this._foreground,
@@ -244,14 +282,18 @@ export class Sound {
       playingMusic: audible && this._music ? current?.key.split('/')[1] || null : null, ambience: this._scene.ambience,
       musicPosition: current ? (this.ctx.currentTime - current.started) % current.duration : 0,
       activeEffects: this._effects.size, pendingEffects: this._pendingEffects.size,
-      effectKinds: Object.freeze([...this._effects].map(item => item.kind)), voiceCount: [...this._effects].filter(item => item.voice).length,
-      musicDucked: [...this._effects].some(item => item.duck), dropped: this._dropped,
+      effectKinds: Object.freeze([...this._effects].map(item => item.kind)), voiceCount: [...this._effects].filter(item => item.voice).length + (this._dialogue ? 1 : 0),
+      speaking: audible ? this._dialogue?.id || null : null, pendingDialogue: this._pendingDialogue?.id || null,
+      dialoguePosition: this._dialogue ? clamp(this.ctx.currentTime - this._dialogue.started, 0, this._dialogue.duration) : 0,
+      dialogueDuration: this._dialogue?.duration || 0,
+      musicDucked: !!this._dialogue || [...this._effects].some(item => item.duck), ambienceDucked: !!this._dialogue, dropped: this._dropped,
       loops: Object.freeze([...this._loops].map(({ key, retiring }) => Object.freeze({ key, retiring }))),
       decoded: Object.freeze(decoded), played: Object.freeze({ ...this._played }), errors: Object.freeze([...this._errors]),
     });
   }
   dispose() {
     this._disposed = true; clearTimeout(this._suspendTimer);
+    this.cancelVoice(0);
     document.removeEventListener('visibilitychange', this._visibility); window.removeEventListener('blur', this._blur); window.removeEventListener('focus', this._focus);
     for (const request of this._requests) request.abort();
     for (const item of this._effects) this._stopEffect(item, 0);

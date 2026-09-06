@@ -21,7 +21,9 @@
     "audio:generate": "node scripts/generate-audio.mjs",
     "audio:prepare": "node scripts/prepare-audio.mjs",
     "test:audio": "node tests/audio.mjs",
-    "test:audio-campaign": "node tests/audio-campaign.mjs"
+    "test:audio-campaign": "node tests/audio-campaign.mjs",
+    "audio:dialogue": "node scripts/generate-dialogue.mjs",
+    "audio:dialogue-prepare": "node scripts/generate-dialogue.mjs --prepare"
   },
   "dependencies": {
     "three": "^0.180.0"

@@ -10,3 +10,6 @@ output/
 .env
 .env.*
 !.env.example
+
+# Local audio authoring process locks
+assets/dialogue/.*.lock

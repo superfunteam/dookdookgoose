@@ -1,9 +1,11 @@
 import {chromium,expect} from '@playwright/test';
 const browser=await chromium.launch({channel:'chrome',headless:true});
+const baseURL=(process.env.GAME_URL||'http://localhost:5173').replace(/\/+$/,'');
 try{
  const page=await browser.newPage({viewport:{width:390,height:844},hasTouch:true});
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('http://localhost:5173');
+ await page.addInitScript(()=>localStorage.setItem('dook-save',JSON.stringify({sound:false,music:false})));
+ await page.goto(baseURL);
  await page.locator('[data-action="start"]').click();
  await page.locator('#player-name').fill('Rocket');
  await page.locator('#name-form button[type="submit"]').click();

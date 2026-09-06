@@ -1,0 +1,23 @@
+{
+  "text": "Behind bars? Hold on, Goose Michael. I'm coming! Door: locked. Brain: tiny. Window: extremely promising. I have eaten three bugs and become one with a shrub. You said you were behind bars. I jumped out of a window!",
+  "previews": [
+    {
+      "index": 0,
+      "path": "assets/dialogue/previews/ferret/0.mp3",
+      "generatedVoiceId": "IlmVEPYHrbA5Fu15UsD2",
+      "duration": 19.88104166666667
+    },
+    {
+      "index": 1,
+      "path": "assets/dialogue/previews/ferret/1.mp3",
+      "generatedVoiceId": "zfiI3BqzT7Mb8FR7y5bW",
+      "duration": 20.35125
+    },
+    {
+      "index": 2,
+      "path": "assets/dialogue/previews/ferret/2.mp3",
+      "generatedVoiceId": "QVGOb9PRbqTYqJB1fVWF",
+      "duration": 19.802666666666667
+    }
+  ]
+}

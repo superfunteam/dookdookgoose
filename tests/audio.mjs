@@ -28,6 +28,10 @@ await page.route('**/audio/**/*.mp3', async route => {
   if (missingHouseScore && path.endsWith('/music/house.mp3')) return route.fulfill({ status: 404, body: '' });
   if (path.endsWith('/window.mp3')) return route.fulfill({ status: 404, body: '' });
   if (path.endsWith('/ready.mp3')) return route.fulfill({ contentType: 'audio/mpeg', body: 'corrupt fixture' });
+  if (path.endsWith('/dialogue/missing-line.mp3')) return route.fulfill({ status: 404, body: '' });
+  if (path.endsWith('/dialogue/slow-start.mp3')) await new Promise(resolve => setTimeout(resolve, 1400));
+  if (path.endsWith('/dialogue/slow-cancel.mp3')) await new Promise(resolve => setTimeout(resolve, 250));
+  if (path.endsWith('/dialogue/complete-line.mp3')) return route.fulfill({ contentType: 'audio/wav', body: silentWav(.3) });
   return route.fulfill({ contentType: 'audio/wav', body: silentWav() });
 });
 
@@ -124,6 +128,90 @@ try {
     await playing('woods');
   }
 
+  // Speech uses its own full-length source; advancing a line replaces both speech and reaction cues.
+  expect(await page.evaluate(() => audio.dialogue('first-line', {nextId: 'second-line'}))).toBe(true);
+  await expect.poll(async () => (await snapshot()).decoded.dialogue).toBe(2);
+  expect((await snapshot()).speaking).toBe('first-line');
+  expect((await snapshot()).dialogueDuration).toBe(3);
+  expect((await snapshot()).voiceCount).toBe(1);
+  expect((await snapshot()).musicDucked).toBe(true);
+  expect((await snapshot()).ambienceDucked).toBe(true);
+  expect((await snapshot()).played['dialogue/second-line']).toBeUndefined();
+  expect(await page.evaluate(() => audio.dialogue('second-line', {nextId: 'third-line'}))).toBe(true);
+  expect((await snapshot()).speaking).toBe('second-line');
+  expect(requests.get('/audio/dialogue/second-line.mp3')).toBe(1);
+  expect(await page.evaluate(async () => {
+    const pending = audio.dialogue('third-line'); audio.cancelVoice(); return pending;
+  })).toBe(false);
+  expect((await snapshot()).played['dialogue/third-line']).toBeUndefined();
+  expect((await snapshot()).pendingDialogue).toBe(null);
+  expect((await snapshot()).ambienceDucked).toBe(false);
+
+  await page.evaluate(() => { window.speechRequest = audio.dialogue('slow-cancel'); });
+  expect((await snapshot()).pendingDialogue).toBe('slow-cancel');
+  await page.evaluate(() => audio.cancelVoice());
+  expect(await page.evaluate(() => window.speechRequest)).toBe(false);
+  expect((await snapshot()).played['dialogue/slow-cancel']).toBeUndefined();
+  // This download takes longer than an effect's stale-cue cutoff, but the line remains relevant.
+  expect(await page.evaluate(() => audio.dialogue('slow-start'))).toBe(true);
+  expect((await snapshot()).speaking).toBe('slow-start');
+  expect((await snapshot()).dialogueDuration).toBe(3);
+  expect(await page.evaluate(() => audio.dialogue('complete-line'))).toBe(true);
+  await expect.poll(async () => (await snapshot()).speaking).toBe(null);
+  expect((await snapshot()).musicDucked).toBe(false);
+  expect((await snapshot()).ambienceDucked).toBe(false);
+
+  for (let index = 0; index < 5; index++) {
+    expect(await page.evaluate(index => audio.dialogue(`cache-line-${index}`, {nextId: `cache-line-${index + 1}`}), index)).toBe(true);
+    expect((await snapshot()).decoded.dialogue).toBeLessThanOrEqual(3);
+  }
+  await page.evaluate(() => { audio.music = false; });
+  expect(await page.evaluate(() => audio.dialogue('music-off-line'))).toBe(true);
+  expect((await snapshot()).playingMusic).toBe(null);
+  expect((await snapshot()).speaking).toBe('music-off-line');
+  await page.evaluate(() => { audio.music = true; audio.cancelVoice(); }); await playing('woods');
+
+  for (const event of ['mute', 'pause', 'hidden', 'blur']) {
+    const id = `stop-${event}`;
+    expect(await page.evaluate(id => audio.dialogue(id), id)).toBe(true);
+    await page.evaluate(event => {
+      if (event === 'mute') audio.enabled = false;
+      if (event === 'pause') audio.tick('paused');
+      if (event === 'hidden') { Object.defineProperty(document, 'hidden', {configurable: true, value: true}); document.dispatchEvent(new Event('visibilitychange')); }
+      if (event === 'blur') window.dispatchEvent(new Event('blur'));
+    }, event);
+    await expect.poll(async () => (await snapshot()).context).toBe('suspended');
+    expect((await snapshot()).speaking).toBe(null);
+    expect((await snapshot()).pendingDialogue).toBe(null);
+    expect((await snapshot()).voiceCount).toBe(0);
+    expect((await snapshot()).ambienceDucked).toBe(false);
+    expect(await page.evaluate(() => audio.dialogue('must-not-play'))).toBe(false);
+    await page.evaluate(() => {
+      Object.defineProperty(document, 'hidden', {configurable: true, value: false});
+      document.dispatchEvent(new Event('visibilitychange')); window.dispatchEvent(new Event('focus'));
+      audio.enabled = true; audio.tick('playing', 'woods');
+    });
+    await playing('woods');
+    expect((await snapshot()).speaking).toBe(null);
+    expect((await snapshot()).played[`dialogue/${id}`]).toBe(1);
+  }
+  for (const event of ['mute', 'pause']) {
+    expect(await page.evaluate(async event => {
+      const pending = audio.dialogue(`race-${event}`);
+      if (event === 'mute') { audio.enabled = false; audio.enabled = true; }
+      else { audio.tick('paused'); audio.tick('playing', 'woods'); }
+      return pending;
+    }, event)).toBe(false);
+    expect((await snapshot()).played[`dialogue/race-${event}`]).toBeUndefined();
+  }
+  expect(await page.evaluate(() => audio.dialogue('missing-line'))).toBe(false);
+  expect(await page.evaluate(() => audio.dialogue('missing-line'))).toBe(false);
+  expect((await snapshot()).errors).toContain('dialogue/missing-line');
+  expect(requests.get('/audio/dialogue/missing-line.mp3')).toBe(1);
+  const requestsBeforeInvalid = requests.size;
+  expect(await page.evaluate(() => audio.dialogue('../private'))).toBe(false);
+  expect(requests.size).toBe(requestsBeforeInvalid);
+
   expect(await page.evaluate(() => audio.effect('window'))).toBe(false);
   expect(await page.evaluate(() => audio.effect('ready'))).toBe(false);
   expect(await page.evaluate(() => audio.effect('not-a-real-effect'))).toBe(false);
@@ -145,5 +233,5 @@ try {
   await expect.poll(async () => (await snapshot()).context).toBe('closed');
   expect((await snapshot()).decoded.bytes).toBe(0);
   expect(errors).toEqual([]);
-  console.log('Audio lifecycle passed: gesture unlock, all scenes, cache bounds, pause/background, toggles, voices, cue limits, quiet failures, disposal.');
+  console.log('Audio lifecycle passed: gesture unlock, all scenes, cache bounds, pause/background, toggles, full dialogue/prefetch/cancellation, ducking, cue limits, quiet failures, disposal.');
 } finally { await context.close(); await browser.close(); }

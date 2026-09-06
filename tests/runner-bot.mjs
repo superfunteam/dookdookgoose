@@ -13,8 +13,10 @@ export async function startRunnerBot(page){
    previous=s;
    const next=course.find(e=>!['coin','heart','finish'].includes(e.type)&&e.distance>s.distance-1);
    if(!next)return;
-   const arrival=(next.distance-s.distance)/s.speed;if(arrival>1||arrival<0)return;
-   const lane=['block','sock'].includes(next.type)?(next.lane===0?1:0):next.lane;
+   const arrival=(next.distance-s.distance)/s.speed;if(arrival>1.3||arrival<0)return;
+   const trail=course.find(e=>e.type==='coin'&&e.distance>s.distance&&e.distance<next.distance);
+   const heart=course.find(e=>e.type==='heart'&&e.distance>s.distance&&e.distance<next.distance&&(e.distance-s.distance)/s.speed<.6);
+   const lane=heart?.lane??(['block','sock'].includes(next.type)?(trail?.lane??(next.lane===0?1:0)):next.lane);
    if(s.lane<lane)key('ArrowRight');if(s.lane>lane)key('ArrowLeft');
    const id=`${s.level}:${next.distance}:${next.type}`;
    if(acted.has(id))return;

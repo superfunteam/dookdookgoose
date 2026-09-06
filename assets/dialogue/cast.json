@@ -1,0 +1,20 @@
+{
+  "ferret": {
+    "name": "Dook Dook Goose - Ferret",
+    "description": "An original male comic adventure character, a small impulsive ferret in his twenties. Authentic contemporary East London Hackney and Cockney accent, clearly British vowels, dropped aitches and lightly glottal consonants, intelligible rather than exaggerated. A lively youthful upper-mid register with a soft furry rasp, warm and loveable, quick bright changes of pitch. An earnest overthinker who makes tiny problems sound like spy missions. Agile conversational comedy, expressive smiles, breathless excitement with crisp clear words. Clean close microphone studio recording, no music, no effects.",
+    "preview": "Behind bars? Hold on, Goose Michael. I'm coming! Door: locked. Brain: tiny. Window: extremely promising. I have eaten three bugs and become one with a shrub. You said you were behind bars. I jumped out of a window!",
+    "seed": 7301
+  },
+  "goose": {
+    "name": "Dook Dook Goose - Goose Michael",
+    "description": "An original male comic character, a relaxed London goose in his forties. Authentic London British accent with a gentle East End Cockney flavour, rounded British vowels, never American. Warm low-mid register, slightly nasal and pleasantly reedy resonance, very clear diction. Easy unhurried conversational delivery, dry understated humour, affectionate and completely unbothered while his friend panics. He sounds as if he is smiling around a spoonful of gelato. Natural expressive character acting and perfect clean studio audio, no music or effects.",
+    "preview": "At the zoo. Behind bars. Hurry. It's melting. Get here soon. I can't hold these much longer. Pistachio or strawberry? Oh, there you are! I got you pistachio. That's nice. Look, the humans are having a meeting.",
+    "seed": 7302
+  },
+  "announcer": {
+    "name": "Dook Dook Goose - Zoo Announcer",
+    "description": "An original female British zoo audio-guide announcer in her fifties. A clear refined southern English received pronunciation accent. Warm rich alto, beautifully precise diction and an official, gently pompous museum-guide cadence. She describes ridiculous human behaviour with absolute earnestness and restrained dry wit. A friendly factual announcement with tiny comic pauses. Clean high quality studio narration, dry microphone sound, no music or background effects.",
+    "preview": "Welcome to the human enclosure. Homo sapiens. Please do not feed the middle managers. These fascinating creatures spend most of their day in meetings. The young accountants are particularly active around lunchtime.",
+    "seed": 7303
+  }
+}

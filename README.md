@@ -1,6 +1,6 @@
 # Dook, Dook, Goose!
 
-A portrait-first, PS1-inspired 3D runner about a very small ferret and a very big misunderstanding. Built with Three.js, Vite, original procedural geometry, pixel textures, and an original ElevenLabs-generated soundtrack and sound effects. No UI framework or ui.sh code.
+A portrait-first, PS1-inspired 3D runner about a very small ferret and a very big misunderstanding. Built with Three.js, Vite, original procedural geometry, pixel textures, and an original ElevenLabs-generated soundtrack, sound effects, and British character voices. No UI framework or ui.sh code.
 
 ## Play locally
 
@@ -34,7 +34,7 @@ Each chapter has an introduction, a mechanic briefing, gameplay, and a completio
 
 Collect gold shiny things and pink recovery hearts. Three collisions end the run; retry restarts the current chapter. Switching tabs automatically pauses gameplay. The music and effects start only after a user interaction, as browsers require.
 
-The runner starts at 31.5–39 metres per second, three times the original pace. Courses are longer to preserve each chapter's play time while delivering more obstacles. Bounding hops are the normal movement, with cadence increasing as the run speeds up. Jumps have compact arcs; swipe down while airborne to dive into a slide. Obstacle prompts use arrival time, and collision detection covers the travelled interval between frames.
+The runner starts at 31.5–39 metres per second, three times the original pace. Chapters run for approximately 65, 71, and 73 seconds (2,250 / 2,850 / 3,150 metres). Encounters are spaced 1.45–1.8 seconds apart, with an opening runway, a clear finish approach, safe coin trails, and recovery hearts about every twenty seconds. Mushroom and creek pairs use a fixed flight time, and endless segments share the same speed-aware schedule across their boundaries. Bounding hops are the normal movement, with cadence increasing as the run speeds up. Jumps have compact arcs; swipe down while airborne to dive into a slide. Obstacle prompts use arrival time, and collision detection covers the travelled interval between frames.
 
 ## Validation
 
@@ -66,7 +66,7 @@ Production address: **https://dookdookgoose.superfun.games/**. The build include
 
 ## Music and sound
 
-Seven instrumental scores cover the title, dialogue, three action chapters, gelato ending, and setbacks. Eighteen effects include ferret dooks, Goose honks, paw contacts, barrel rolls, slides, gates and the window escape; quiet ambience distinguishes each environment. The sound button mutes all audio, and the help panel has a separate music switch. Audio starts after interaction and pauses with gameplay or when the page is hidden.
+Seven instrumental scores cover the title, dialogue, three action chapters, gelato ending, and setbacks. Eighteen effects include ferret dooks, Goose honks, paw contacts, barrel rolls, slides, gates and the window escape; quiet ambience distinguishes each environment. All 23 story lines have original character performances: a lively Hackney/Cockney ferret, dry London Goose Michael, and a proper British zoo announcer. Dialogue has subtitles, a replay button, instant skipping, and automatic music ducking. The sound button mutes all audio, and the help panel has a separate music switch. Audio starts after interaction and pauses with gameplay or when the page is hidden.
 
 Prepared audio is checked in under `public/audio`, works offline after the first complete download, and makes no live API requests. See `docs/audio.md` for the soundtrack and optional generation/packaging commands. API credentials remain in ignored local environment files.
 

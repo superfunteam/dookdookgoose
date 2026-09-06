@@ -1,0 +1,23 @@
+{
+  "text": "Welcome to the human enclosure. Homo sapiens. Please do not feed the middle managers. These fascinating creatures spend most of their day in meetings. The young accountants are particularly active around lunchtime.",
+  "previews": [
+    {
+      "index": 0,
+      "path": "assets/dialogue/previews/announcer/0.mp3",
+      "generatedVoiceId": "2GwkwlYdmxWurLbuB50J",
+      "duration": 16.51125
+    },
+    {
+      "index": 1,
+      "path": "assets/dialogue/previews/announcer/1.mp3",
+      "generatedVoiceId": "IufcHhQEurr6WAZNhZVe",
+      "duration": 16.589625
+    },
+    {
+      "index": 2,
+      "path": "assets/dialogue/previews/announcer/2.mp3",
+      "generatedVoiceId": "cPuFJQuT3N0aN9iJorKM",
+      "duration": 17.164291666666667
+    }
+  ]
+}

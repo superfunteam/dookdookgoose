@@ -1,0 +1,23 @@
+{
+  "text": "At the zoo. Behind bars. Hurry. It's melting. Get here soon. I can't hold these much longer. Pistachio or strawberry? Oh, there you are! I got you pistachio. That's nice. Look, the humans are having a meeting.",
+  "previews": [
+    {
+      "index": 0,
+      "path": "assets/dialogue/previews/goose/0.mp3",
+      "generatedVoiceId": "trBvP16hHu2ElUTex922",
+      "duration": 16.92920833333333
+    },
+    {
+      "index": 1,
+      "path": "assets/dialogue/previews/goose/1.mp3",
+      "generatedVoiceId": "2ngLFKZlvgy4oTyr8VfH",
+      "duration": 17.47779166666667
+    },
+    {
+      "index": 2,
+      "path": "assets/dialogue/previews/goose/2.mp3",
+      "generatedVoiceId": "5nGS1TqwL05nO4RVaZw0",
+      "duration": 17.947958333333332
+    }
+  ]
+}

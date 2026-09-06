@@ -1,0 +1,2165 @@
+{
+  "version": 1,
+  "method": "ElevenLabs Scribe v2 transcription of final rendered MP3s; normalized word alignment.",
+  "limitation": "Automated recognition can flag or miss errors. This is not a human listening or accent/performance review.",
+  "lines": {
+    "house-intro-01": {
+      "id": "house-intro-01",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/house-intro-01.mp3",
+      "audioHash": "02d4eb120d1cd9183acea4ef80ad207499be74993f7b7438d98ade300210926e",
+      "textHash": "ceac53672c0b0dc7e3a451f5380c66222b8af0b8b1d7b09c77f22d8f91cb1dd5",
+      "expected": "At the zoo. Behind bars. Hurry. It’s melting.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:43.855Z",
+      "completedAt": "2026-09-06T21:06:44.730Z",
+      "requestId": null,
+      "transcript": "At the zoo! Behind bars! Hurry, it's melting!",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "At",
+          "start": 0.159,
+          "end": 0.299,
+          "logprob": -0.0016121974913403392
+        },
+        {
+          "text": "the",
+          "start": 0.359,
+          "end": 0.419,
+          "logprob": -0.000021457441107486375
+        },
+        {
+          "text": "zoo!",
+          "start": 0.519,
+          "end": 0.859,
+          "logprob": -0.13998206042742822
+        },
+        {
+          "text": "Behind",
+          "start": 1.179,
+          "end": 1.539,
+          "logprob": -0.00011205045302631333
+        },
+        {
+          "text": "bars!",
+          "start": 1.659,
+          "end": 2.139,
+          "logprob": -0.022612937769736163
+        },
+        {
+          "text": "Hurry,",
+          "start": 2.419,
+          "end": 2.759,
+          "logprob": -0.11601712305847893
+        },
+        {
+          "text": "it's",
+          "start": 3,
+          "end": 3.159,
+          "logprob": -0.00003403312044092388
+        },
+        {
+          "text": "melting!",
+          "start": 3.24,
+          "end": 3.74,
+          "logprob": -0.0047923391617246125
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "at",
+          "the",
+          "zoo",
+          "behind",
+          "bars",
+          "hurry",
+          "it",
+          "is",
+          "melting"
+        ],
+        "recognizedWords": [
+          "at",
+          "the",
+          "zoo",
+          "behind",
+          "bars",
+          "hurry",
+          "it",
+          "is",
+          "melting"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "house-intro-02": {
+      "id": "house-intro-02",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/house-intro-02.mp3",
+      "audioHash": "a896b58f2fb7f15a9b5d0856ced7c675037482f8ec5e70e65774dc79af4e9b6c",
+      "textHash": "84856c73960661ed4f88803e96f20cb5149d1e4a3aad631c968faec02b2b6821",
+      "expected": "BEHIND BARS?! Hold on, Goose Michael. I’m coming.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:44.733Z",
+      "completedAt": "2026-09-06T21:06:45.124Z",
+      "requestId": null,
+      "transcript": "Behind bars? Hold on, Goose Michael, I'm coming",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Behind",
+          "start": 0.059,
+          "end": 0.5,
+          "logprob": -0.00046361665590666234
+        },
+        {
+          "text": "bars?",
+          "start": 0.599,
+          "end": 1.159,
+          "logprob": -0.00017028782749548555
+        },
+        {
+          "text": "Hold",
+          "start": 1.599,
+          "end": 1.899,
+          "logprob": -0.000013828182090946939
+        },
+        {
+          "text": "on,",
+          "start": 1.979,
+          "end": 2.079,
+          "logprob": -0.03341660896937052
+        },
+        {
+          "text": "Goose",
+          "start": 2.2,
+          "end": 2.44,
+          "logprob": -0.00043406602344475687
+        },
+        {
+          "text": "Michael,",
+          "start": 2.519,
+          "end": 2.879,
+          "logprob": -0.028414705142495222
+        },
+        {
+          "text": "I'm",
+          "start": 3.24,
+          "end": 3.359,
+          "logprob": -3.1789137011628554e-7
+        },
+        {
+          "text": "coming",
+          "start": 3.46,
+          "end": 3.92,
+          "logprob": 0
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "behind",
+          "bars",
+          "hold",
+          "on",
+          "goose",
+          "michael",
+          "i",
+          "am",
+          "coming"
+        ],
+        "recognizedWords": [
+          "behind",
+          "bars",
+          "hold",
+          "on",
+          "goose",
+          "michael",
+          "i",
+          "am",
+          "coming"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "house-intro-03": {
+      "id": "house-intro-03",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/house-intro-03.mp3",
+      "audioHash": "7f2430b6a0136a26b2705f4285faa5427ea69a001d09ea3c74a653346e519121",
+      "textHash": "805ad97dc58a3e2dc4ab7de833f5406f37f9d80af5f1a2b0d8db4cfaa0d3058a",
+      "expected": "Door: locked. Brain: tiny. Window: extremely promising.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:45.125Z",
+      "completedAt": "2026-09-06T21:06:45.724Z",
+      "requestId": null,
+      "transcript": "Door locked. Brain tiny. Window extremely promising",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Door",
+          "start": 0.059,
+          "end": 0.379,
+          "logprob": -0.000974656839389354
+        },
+        {
+          "text": "locked.",
+          "start": 0.74,
+          "end": 1.139,
+          "logprob": -0.014781238378158637
+        },
+        {
+          "text": "Brain",
+          "start": 1.74,
+          "end": 2.18,
+          "logprob": -0.00004815939246327616
+        },
+        {
+          "text": "tiny.",
+          "start": 2.619,
+          "end": 3.179,
+          "logprob": -0.0009407982000993797
+        },
+        {
+          "text": "Window",
+          "start": 3.839,
+          "end": 4.36,
+          "logprob": -0.000017404405298293568
+        },
+        {
+          "text": "extremely",
+          "start": 4.859,
+          "end": 5.659,
+          "logprob": -0.00005209310256759636
+        },
+        {
+          "text": "promising",
+          "start": 5.779,
+          "end": 6.279,
+          "logprob": -0.0000010728830375228426
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "door",
+          "locked",
+          "brain",
+          "tiny",
+          "window",
+          "extremely",
+          "promising"
+        ],
+        "recognizedWords": [
+          "door",
+          "locked",
+          "brain",
+          "tiny",
+          "window",
+          "extremely",
+          "promising"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "house-exit-01": {
+      "id": "house-exit-01",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/house-exit-01.mp3",
+      "audioHash": "1eeb07a8b48779a787027e65f4f549ad29a79714f9905eabde27020a1dc6318d",
+      "textHash": "87c27ec3ec9a416df10b778f04837c1a2b3606029c61624bbbcd932b43d530ad",
+      "expected": "Window? Defenestrated. House? Escaped.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:45.726Z",
+      "completedAt": "2026-09-06T21:06:46.184Z",
+      "requestId": null,
+      "transcript": "Window? Defenestrated. House? Escaped",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Window?",
+          "start": 0.079,
+          "end": 0.479,
+          "logprob": -0.06840119730415088
+        },
+        {
+          "text": "Defenestrated.",
+          "start": 0.859,
+          "end": 1.699,
+          "logprob": -0.001614975856552649
+        },
+        {
+          "text": "House?",
+          "start": 2.159,
+          "end": 2.639,
+          "logprob": -0.00000137090588244367
+        },
+        {
+          "text": "Escaped",
+          "start": 3.139,
+          "end": 3.679,
+          "logprob": -0.00028098739650366563
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "window",
+          "defenestrated",
+          "house",
+          "escaped"
+        ],
+        "recognizedWords": [
+          "window",
+          "defenestrated",
+          "house",
+          "escaped"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "house-exit-02": {
+      "id": "house-exit-02",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/house-exit-02.mp3",
+      "audioHash": "cdbb6b15dcb9126790b0b8dcaf9ccb22923b5cf196d5e712e1947098e34ee6b7",
+      "textHash": "77beba43e971281dcd091d1714d5ed696af9c8e82ba098938df7bdad7f9d8c80",
+      "expected": "Get here soon. I can’t hold these much longer.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:46.186Z",
+      "completedAt": "2026-09-06T21:06:46.545Z",
+      "requestId": null,
+      "transcript": "Get here soon. I can't hold these much longer",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Get",
+          "start": 0.079,
+          "end": 0.239,
+          "logprob": -0.0004323977918829769
+        },
+        {
+          "text": "here",
+          "start": 0.299,
+          "end": 0.579,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "soon.",
+          "start": 0.659,
+          "end": 1.36,
+          "logprob": -0.0013702636574635108
+        },
+        {
+          "text": "I",
+          "start": 1.379,
+          "end": 1.539,
+          "logprob": 0
+        },
+        {
+          "text": "can't",
+          "start": 1.579,
+          "end": 1.86,
+          "logprob": -0.0000029563685529865325
+        },
+        {
+          "text": "hold",
+          "start": 1.939,
+          "end": 2.139,
+          "logprob": 0
+        },
+        {
+          "text": "these",
+          "start": 2.18,
+          "end": 2.419,
+          "logprob": 0
+        },
+        {
+          "text": "much",
+          "start": 2.46,
+          "end": 2.619,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "longer",
+          "start": 2.74,
+          "end": 3.039,
+          "logprob": -0.0000036954811548639555
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "get",
+          "here",
+          "soon",
+          "i",
+          "can",
+          "not",
+          "hold",
+          "these",
+          "much",
+          "longer"
+        ],
+        "recognizedWords": [
+          "get",
+          "here",
+          "soon",
+          "i",
+          "can",
+          "not",
+          "hold",
+          "these",
+          "much",
+          "longer"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "house-exit-03": {
+      "id": "house-exit-03",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/house-exit-03.mp3",
+      "audioHash": "2a4a6c25131d1e45ec0ac8cc563fb0855a6d6858b61ab103a42676b831c9e382",
+      "textHash": "65f541bf4108d80469605f9704e4784df7ae5cbb2ddac2b1830f8a8bb66752c9",
+      "expected": "They’ve restrained his wings. This goes all the way to the top.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:46.547Z",
+      "completedAt": "2026-09-06T21:06:47.066Z",
+      "requestId": null,
+      "transcript": "They've restrained his wings. This goes all the way to the top",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "They've",
+          "start": 0.079,
+          "end": 0.239,
+          "logprob": -0.00003141944554434823
+        },
+        {
+          "text": "restrained",
+          "start": 0.28,
+          "end": 0.959,
+          "logprob": -0.00006997340824455023
+        },
+        {
+          "text": "his",
+          "start": 0.959,
+          "end": 1.179,
+          "logprob": -0.0000015497195136049413
+        },
+        {
+          "text": "wings.",
+          "start": 1.22,
+          "end": 1.739,
+          "logprob": -0.0004697001612044005
+        },
+        {
+          "text": "This",
+          "start": 2.279,
+          "end": 2.5,
+          "logprob": -4.768370445162873e-7
+        },
+        {
+          "text": "goes",
+          "start": 2.539,
+          "end": 2.899,
+          "logprob": -3.576278118089249e-7
+        },
+        {
+          "text": "all",
+          "start": 2.919,
+          "end": 3.299,
+          "logprob": 0
+        },
+        {
+          "text": "the",
+          "start": 3.419,
+          "end": 3.439,
+          "logprob": -3.576278118089249e-7
+        },
+        {
+          "text": "way",
+          "start": 3.46,
+          "end": 3.759,
+          "logprob": 0
+        },
+        {
+          "text": "to",
+          "start": 3.759,
+          "end": 3.859,
+          "logprob": -0.0000017881377516459906
+        },
+        {
+          "text": "the",
+          "start": 3.879,
+          "end": 4,
+          "logprob": -0.0000027418097943154862
+        },
+        {
+          "text": "top",
+          "start": 4.039,
+          "end": 4.339,
+          "logprob": -0.000002264974000354414
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "they",
+          "have",
+          "restrained",
+          "his",
+          "wings",
+          "this",
+          "goes",
+          "all",
+          "the",
+          "way",
+          "to",
+          "the",
+          "top"
+        ],
+        "recognizedWords": [
+          "they",
+          "have",
+          "restrained",
+          "his",
+          "wings",
+          "this",
+          "goes",
+          "all",
+          "the",
+          "way",
+          "to",
+          "the",
+          "top"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "woods-intro-01": {
+      "id": "woods-intro-01",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/woods-intro-01.mp3",
+      "audioHash": "999b8f38fe05669d7a016af4c60c1f20940470a041e0c0188f0a13bd9a84f769",
+      "textHash": "814feb41fedf6af0c89d1e28d259388d82ca973fbb299adf83b048f5e3c06f78",
+      "expected": "The woods. A shortcut for someone with absolutely no map.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:47.068Z",
+      "completedAt": "2026-09-06T21:06:47.468Z",
+      "requestId": null,
+      "transcript": "The woods, a shortcut for someone with absolutely no map",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "The",
+          "start": 0.079,
+          "end": 0.159,
+          "logprob": -0.00011157367407577112
+        },
+        {
+          "text": "woods,",
+          "start": 0.199,
+          "end": 0.56,
+          "logprob": -0.020669917731235426
+        },
+        {
+          "text": "a",
+          "start": 0.919,
+          "end": 1,
+          "logprob": -0.000005483612312673358
+        },
+        {
+          "text": "shortcut",
+          "start": 1.039,
+          "end": 1.48,
+          "logprob": -5.960462772236497e-7
+        },
+        {
+          "text": "for",
+          "start": 1.559,
+          "end": 1.679,
+          "logprob": -5.960462772236497e-7
+        },
+        {
+          "text": "someone",
+          "start": 1.719,
+          "end": 2.039,
+          "logprob": 0
+        },
+        {
+          "text": "with",
+          "start": 2.099,
+          "end": 2.299,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "absolutely",
+          "start": 2.359,
+          "end": 3.019,
+          "logprob": -2.3841855067985307e-7
+        },
+        {
+          "text": "no",
+          "start": 3.24,
+          "end": 3.439,
+          "logprob": 0
+        },
+        {
+          "text": "map",
+          "start": 3.599,
+          "end": 3.839,
+          "logprob": -0.00003349725011503324
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "the",
+          "woods",
+          "a",
+          "shortcut",
+          "for",
+          "someone",
+          "with",
+          "absolutely",
+          "no",
+          "map"
+        ],
+        "recognizedWords": [
+          "the",
+          "woods",
+          "a",
+          "shortcut",
+          "for",
+          "someone",
+          "with",
+          "absolutely",
+          "no",
+          "map"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "woods-intro-02": {
+      "id": "woods-intro-02",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/woods-intro-02.mp3",
+      "audioHash": "de07eb396719d86500c04edc405bb196e53117aa282530cfc23e4a918e53e878",
+      "textHash": "474eae71165a9618bd7c4085bbad36889e490bbb0c4ae57fad9e25cbb4c8722c",
+      "expected": "I’m by the primates. One of them is doing his taxes.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:47.469Z",
+      "completedAt": "2026-09-06T21:06:47.920Z",
+      "requestId": null,
+      "transcript": "I'm by the primates. One of them is doing his taxes",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 0.099,
+          "end": 0.199,
+          "logprob": -0.000005722018158849096
+        },
+        {
+          "text": "by",
+          "start": 0.239,
+          "end": 0.379,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "the",
+          "start": 0.419,
+          "end": 0.519,
+          "logprob": -0.0000023841830625315197
+        },
+        {
+          "text": "primates.",
+          "start": 0.56,
+          "end": 1.519,
+          "logprob": -0.00012212907960121002
+        },
+        {
+          "text": "One",
+          "start": 1.599,
+          "end": 1.699,
+          "logprob": -2.3841855067985307e-7
+        },
+        {
+          "text": "of",
+          "start": 1.699,
+          "end": 1.799,
+          "logprob": 0
+        },
+        {
+          "text": "them",
+          "start": 1.799,
+          "end": 1.919,
+          "logprob": 0
+        },
+        {
+          "text": "is",
+          "start": 1.959,
+          "end": 2.119,
+          "logprob": 0
+        },
+        {
+          "text": "doing",
+          "start": 2.139,
+          "end": 2.379,
+          "logprob": 0
+        },
+        {
+          "text": "his",
+          "start": 2.379,
+          "end": 2.599,
+          "logprob": 0
+        },
+        {
+          "text": "taxes",
+          "start": 2.619,
+          "end": 3.179,
+          "logprob": -0.000003576272320060525
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "i",
+          "am",
+          "by",
+          "the",
+          "primates",
+          "one",
+          "of",
+          "them",
+          "is",
+          "doing",
+          "his",
+          "taxes"
+        ],
+        "recognizedWords": [
+          "i",
+          "am",
+          "by",
+          "the",
+          "primates",
+          "one",
+          "of",
+          "them",
+          "is",
+          "doing",
+          "his",
+          "taxes"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "woods-intro-03": {
+      "id": "woods-intro-03",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/woods-intro-03.mp3",
+      "audioHash": "9ba713854e1f251f141465859efd21ddf5e1f2cd5653e97e5a296dade6ad3f04",
+      "textHash": "4fac2f579b730fff3d388ee8b8533d466caca8cfa31cceba68574b2fecc2eb40",
+      "expected": "Psychological warfare. Stay strong, buddy.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:47.921Z",
+      "completedAt": "2026-09-06T21:06:48.332Z",
+      "requestId": null,
+      "transcript": "Psychological warfare. Stay strong, buddy",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Psychological",
+          "start": 0.119,
+          "end": 0.899,
+          "logprob": -0.002198088217343096
+        },
+        {
+          "text": "warfare.",
+          "start": 1.019,
+          "end": 1.519,
+          "logprob": -0.0005967707693343982
+        },
+        {
+          "text": "Stay",
+          "start": 2.099,
+          "end": 2.299,
+          "logprob": -0.0000046491513785440475
+        },
+        {
+          "text": "strong,",
+          "start": 2.379,
+          "end": 2.7,
+          "logprob": -0.00016905922763856194
+        },
+        {
+          "text": "buddy",
+          "start": 2.799,
+          "end": 3.019,
+          "logprob": -0.00022110878489911556
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "psychological",
+          "warfare",
+          "stay",
+          "strong",
+          "buddy"
+        ],
+        "recognizedWords": [
+          "psychological",
+          "warfare",
+          "stay",
+          "strong",
+          "buddy"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "woods-exit-01": {
+      "id": "woods-exit-01",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/woods-exit-01.mp3",
+      "audioHash": "e1c193f1f65364b08568a243c7e24d7f5415373d262efb9b47d9537582797337",
+      "textHash": "d3b005299fddce8a7d0ea9262e0b0c35744cdcfa88649b73aabb919d5521f3bf",
+      "expected": "I have eaten three bugs and become one with a shrub.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:48.333Z",
+      "completedAt": "2026-09-06T21:06:48.876Z",
+      "requestId": null,
+      "transcript": "I have eaten three bugs and become one with a shrub",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "I",
+          "start": 0.439,
+          "end": 0.46,
+          "logprob": -0.00011014331539627165
+        },
+        {
+          "text": "have",
+          "start": 0.479,
+          "end": 0.56,
+          "logprob": -0.000004291525328881107
+        },
+        {
+          "text": "eaten",
+          "start": 0.579,
+          "end": 0.919,
+          "logprob": -0.0000020265558760002023
+        },
+        {
+          "text": "three",
+          "start": 0.939,
+          "end": 1.12,
+          "logprob": -0.0000010728830375228426
+        },
+        {
+          "text": "bugs",
+          "start": 1.199,
+          "end": 1.679,
+          "logprob": -0.000027179348762729205
+        },
+        {
+          "text": "and",
+          "start": 1.719,
+          "end": 1.819,
+          "logprob": -0.00018070495571009815
+        },
+        {
+          "text": "become",
+          "start": 1.839,
+          "end": 2.2,
+          "logprob": -0.000009059865078597795
+        },
+        {
+          "text": "one",
+          "start": 2.299,
+          "end": 2.46,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "with",
+          "start": 2.5,
+          "end": 2.599,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "a",
+          "start": 2.72,
+          "end": 2.74,
+          "logprob": -0.0000019073468138230965
+        },
+        {
+          "text": "shrub",
+          "start": 2.74,
+          "end": 3.079,
+          "logprob": -0.000016569954823353328
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "i",
+          "have",
+          "eaten",
+          "three",
+          "bugs",
+          "and",
+          "become",
+          "one",
+          "with",
+          "a",
+          "shrub"
+        ],
+        "recognizedWords": [
+          "i",
+          "have",
+          "eaten",
+          "three",
+          "bugs",
+          "and",
+          "become",
+          "one",
+          "with",
+          "a",
+          "shrub"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "woods-exit-02": {
+      "id": "woods-exit-02",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/woods-exit-02.mp3",
+      "audioHash": "4d089eb4b183c61f670d0f2e38d0f96c1af1248cd1aacf03e6352fd51d15eeeb",
+      "textHash": "5d4d6c9aba29b60464c7f2bd3c225832e5a0ed64cc3fc7556514625312bc6c45",
+      "expected": "Pistachio or strawberry?",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:48.878Z",
+      "completedAt": "2026-09-06T21:06:49.322Z",
+      "requestId": null,
+      "transcript": "Pistachio or strawberry?",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Pistachio",
+          "start": 0.059,
+          "end": 0.759,
+          "logprob": -0.00013656302022961123
+        },
+        {
+          "text": "or",
+          "start": 0.779,
+          "end": 0.939,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "strawberry?",
+          "start": 0.979,
+          "end": 1.599,
+          "logprob": -0.005296257896010171
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "pistachio",
+          "or",
+          "strawberry"
+        ],
+        "recognizedWords": [
+          "pistachio",
+          "or",
+          "strawberry"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "woods-exit-03": {
+      "id": "woods-exit-03",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/woods-exit-03.mp3",
+      "audioHash": "df2629cee53bf4d1fb9ff6e1dd97a79352997ac64c7f9c8f41a9a96998361fc2",
+      "textHash": "df9262c34b3d78d37d8b1c91074080b30d8070d6253ccd86360285f91658d3be",
+      "expected": "I don’t know your captors’ names, Goose.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:49.323Z",
+      "completedAt": "2026-09-06T21:06:49.796Z",
+      "requestId": null,
+      "transcript": "I don't know your captor's names, Goose",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "I",
+          "start": 0.14,
+          "end": 0.159,
+          "logprob": -0.0007109498255886137
+        },
+        {
+          "text": "don't",
+          "start": 0.159,
+          "end": 0.379,
+          "logprob": -0.000019573239768533313
+        },
+        {
+          "text": "know",
+          "start": 0.419,
+          "end": 0.659,
+          "logprob": 0
+        },
+        {
+          "text": "your",
+          "start": 0.68,
+          "end": 0.819,
+          "logprob": -0.00002169585604860913
+        },
+        {
+          "text": "captor's",
+          "start": 0.859,
+          "end": 1.279,
+          "logprob": -0.10757119732806686
+        },
+        {
+          "text": "names,",
+          "start": 1.299,
+          "end": 1.579,
+          "logprob": -0.0030500996993699423
+        },
+        {
+          "text": "Goose",
+          "start": 1.659,
+          "end": 1.939,
+          "logprob": -0.006739149335771799
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "i",
+          "do",
+          "not",
+          "know",
+          "your",
+          "captors",
+          "names",
+          "goose"
+        ],
+        "recognizedWords": [
+          "i",
+          "do",
+          "not",
+          "know",
+          "your",
+          "captors",
+          "names",
+          "goose"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "zoo-intro-01": {
+      "id": "zoo-intro-01",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/zoo-intro-01.mp3",
+      "audioHash": "5fc26fe336d1537da8d42a2ed958ece37686fb1d014caf8c55ae44fa38c1bc26",
+      "textHash": "06cba9a1135a785c1e2a4fd6d927a9cdb8fc7b4950a0fb29f2a294c2f730a80d",
+      "expected": "I’m in. These enclosures are full of… accountants?",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:49.798Z",
+      "completedAt": "2026-09-06T21:06:50.269Z",
+      "requestId": null,
+      "transcript": "I'm in. These enclosures are full of accountants?",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "I'm",
+          "start": 0.099,
+          "end": 0.219,
+          "logprob": -0.000003695480396951704
+        },
+        {
+          "text": "in.",
+          "start": 0.28,
+          "end": 0.439,
+          "logprob": -0.0000027418063079191293
+        },
+        {
+          "text": "These",
+          "start": 0.979,
+          "end": 1.199,
+          "logprob": -4.768370445162873e-7
+        },
+        {
+          "text": "enclosures",
+          "start": 1.24,
+          "end": 1.759,
+          "logprob": -0.000027417760065873154
+        },
+        {
+          "text": "are",
+          "start": 1.799,
+          "end": 1.959,
+          "logprob": -2.3841855067985307e-7
+        },
+        {
+          "text": "full",
+          "start": 2,
+          "end": 2.139,
+          "logprob": 0
+        },
+        {
+          "text": "of",
+          "start": 2.22,
+          "end": 2.539,
+          "logprob": -8.344646857949556e-7
+        },
+        {
+          "text": "accountants?",
+          "start": 2.899,
+          "end": 3.639,
+          "logprob": -0.004254407365806401
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "i",
+          "am",
+          "in",
+          "these",
+          "enclosures",
+          "are",
+          "full",
+          "of",
+          "accountants"
+        ],
+        "recognizedWords": [
+          "i",
+          "am",
+          "in",
+          "these",
+          "enclosures",
+          "are",
+          "full",
+          "of",
+          "accountants"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "zoo-intro-02": {
+      "id": "zoo-intro-02",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/zoo-intro-02.mp3",
+      "audioHash": "2fbf8101c98240a7d55f6a792b6eab03113075a54135eff25d5f88966864f851",
+      "textHash": "2b973d5cf5fd4ac4aa20a0452dd1c7b9186fc13015d79923555b8954201ec180",
+      "expected": "HOMO SAPIENS · Please do not feed the middle managers.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:50.271Z",
+      "completedAt": "2026-09-06T21:06:50.910Z",
+      "requestId": null,
+      "transcript": "Homo sapiens, please do not feed the middle managers",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Homo",
+          "start": 0.079,
+          "end": 0.439,
+          "logprob": -0.002870251191779971
+        },
+        {
+          "text": "sapiens,",
+          "start": 0.599,
+          "end": 1.419,
+          "logprob": -0.05086602328810841
+        },
+        {
+          "text": "please",
+          "start": 1.959,
+          "end": 2.359,
+          "logprob": -0.00007486063259420916
+        },
+        {
+          "text": "do",
+          "start": 2.399,
+          "end": 2.539,
+          "logprob": -0.000002622600959512056
+        },
+        {
+          "text": "not",
+          "start": 2.579,
+          "end": 2.859,
+          "logprob": -3.576278118089249e-7
+        },
+        {
+          "text": "feed",
+          "start": 2.879,
+          "end": 3.179,
+          "logprob": -0.0000016689286894688848
+        },
+        {
+          "text": "the",
+          "start": 3.22,
+          "end": 3.259,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "middle",
+          "start": 3.319,
+          "end": 3.559,
+          "logprob": -0.0000023841830625315197
+        },
+        {
+          "text": "managers",
+          "start": 3.659,
+          "end": 4.259,
+          "logprob": -0.000010251946150674485
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "homo",
+          "sapiens",
+          "please",
+          "do",
+          "not",
+          "feed",
+          "the",
+          "middle",
+          "managers"
+        ],
+        "recognizedWords": [
+          "homo",
+          "sapiens",
+          "please",
+          "do",
+          "not",
+          "feed",
+          "the",
+          "middle",
+          "managers"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "zoo-intro-03": {
+      "id": "zoo-intro-03",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/zoo-intro-03.mp3",
+      "audioHash": "f5df9f4524c376dd09d2f16f1c7ae64967e3ad42cdf26e2cdbb45755f63a940e",
+      "textHash": "f88a73ac4b76606d1f10183006aceec0c7ce6fba7075a7068dd15f89fd021552",
+      "expected": "No time to unpack that. DOOK at the gates. Find Goose.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:50.912Z",
+      "completedAt": "2026-09-06T21:06:51.365Z",
+      "requestId": null,
+      "transcript": "No time to unpack that. Duke at the gates. Find Goose",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "No",
+          "start": 0.099,
+          "end": 0.219,
+          "logprob": -0.000010609570381348021
+        },
+        {
+          "text": "time",
+          "start": 0.299,
+          "end": 0.539,
+          "logprob": -2.3841855067985307e-7
+        },
+        {
+          "text": "to",
+          "start": 0.599,
+          "end": 0.659,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "unpack",
+          "start": 0.719,
+          "end": 1.12,
+          "logprob": -0.00001883488948806189
+        },
+        {
+          "text": "that.",
+          "start": 1.159,
+          "end": 1.419,
+          "logprob": -0.0007473323959629851
+        },
+        {
+          "text": "Duke",
+          "start": 1.86,
+          "end": 2.039,
+          "logprob": -0.0002029928145930171
+        },
+        {
+          "text": "at",
+          "start": 2.079,
+          "end": 2.139,
+          "logprob": -2.3841855067985307e-7
+        },
+        {
+          "text": "the",
+          "start": 2.18,
+          "end": 2.22,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "gates.",
+          "start": 2.279,
+          "end": 2.7,
+          "logprob": -0.0024109704433309767
+        },
+        {
+          "text": "Find",
+          "start": 3.019,
+          "end": 3.379,
+          "logprob": -0.0000040531076592742465
+        },
+        {
+          "text": "Goose",
+          "start": 3.5,
+          "end": 3.919,
+          "logprob": -0.026304742321372032
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "no",
+          "time",
+          "to",
+          "unpack",
+          "that",
+          "dook",
+          "at",
+          "the",
+          "gates",
+          "find",
+          "goose"
+        ],
+        "recognizedWords": [
+          "no",
+          "time",
+          "to",
+          "unpack",
+          "that",
+          "duke",
+          "at",
+          "the",
+          "gates",
+          "find",
+          "goose"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [
+          {
+            "expected": "dook",
+            "recognized": "duke",
+            "reason": "Ferret call may be transcribed phonetically."
+          }
+        ],
+        "flags": []
+      }
+    },
+    "ending-01": {
+      "id": "ending-01",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/ending-01.mp3",
+      "audioHash": "b6d1e34c7a161face45fc815ad71592d92df9a0e352caf7c1e5fd720128701db",
+      "textHash": "b442ccd96962ee40dccdc2fd004cb7e192c90714e65d328a990cdf086761c27c",
+      "expected": "GOOSE MICHAEL! Step away from the bars!",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:51.367Z",
+      "completedAt": "2026-09-06T21:06:51.723Z",
+      "requestId": null,
+      "transcript": "Goose Michael, step away from the bars",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Goose",
+          "start": 0.059,
+          "end": 0.359,
+          "logprob": -0.00027969536786258685
+        },
+        {
+          "text": "Michael,",
+          "start": 0.459,
+          "end": 1.199,
+          "logprob": -0.005859477212652564
+        },
+        {
+          "text": "step",
+          "start": 1.299,
+          "end": 1.48,
+          "logprob": -0.000007152531907195225
+        },
+        {
+          "text": "away",
+          "start": 1.559,
+          "end": 1.799,
+          "logprob": 0
+        },
+        {
+          "text": "from",
+          "start": 1.819,
+          "end": 1.979,
+          "logprob": 0
+        },
+        {
+          "text": "the",
+          "start": 1.979,
+          "end": 2.059,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "bars",
+          "start": 2.099,
+          "end": 2.68,
+          "logprob": -0.000011444026313256472
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "goose",
+          "michael",
+          "step",
+          "away",
+          "from",
+          "the",
+          "bars"
+        ],
+        "recognizedWords": [
+          "goose",
+          "michael",
+          "step",
+          "away",
+          "from",
+          "the",
+          "bars"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "ending-02": {
+      "id": "ending-02",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/ending-02.mp3",
+      "audioHash": "b77ab66b997d66e2e79d6449433789da849b892975be45a4d06d7a998b16e5b1",
+      "textHash": "90eae5f675bbc3ab3a94a53c114ed0b20ddb7b7ab070a61666bb06fac553f70e",
+      "expected": "Oh, there you are! I got you pistachio.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:51.725Z",
+      "completedAt": "2026-09-06T21:06:52.261Z",
+      "requestId": null,
+      "transcript": "Oh, there you are. I got you pistachio",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Oh,",
+          "start": 0.159,
+          "end": 0.379,
+          "logprob": -0.00016785894452671832
+        },
+        {
+          "text": "there",
+          "start": 0.56,
+          "end": 0.819,
+          "logprob": -0.000001311301275563892
+        },
+        {
+          "text": "you",
+          "start": 0.879,
+          "end": 1,
+          "logprob": -8.344646857949556e-7
+        },
+        {
+          "text": "are.",
+          "start": 1.039,
+          "end": 1.24,
+          "logprob": -0.004538838285947477
+        },
+        {
+          "text": "I",
+          "start": 1.679,
+          "end": 1.759,
+          "logprob": -2.3841855067985307e-7
+        },
+        {
+          "text": "got",
+          "start": 1.799,
+          "end": 1.959,
+          "logprob": -4.768370445162873e-7
+        },
+        {
+          "text": "you",
+          "start": 2,
+          "end": 2.059,
+          "logprob": -2.3841855067985307e-7
+        },
+        {
+          "text": "pistachio",
+          "start": 2.119,
+          "end": 2.819,
+          "logprob": -0.0005566716426983476
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "oh",
+          "there",
+          "you",
+          "are",
+          "i",
+          "got",
+          "you",
+          "pistachio"
+        ],
+        "recognizedWords": [
+          "oh",
+          "there",
+          "you",
+          "are",
+          "i",
+          "got",
+          "you",
+          "pistachio"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "ending-03": {
+      "id": "ending-03",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/ending-03.mp3",
+      "audioHash": "0052f6dda5701af9d5dda38aefaa0d0bd18cdd648f110b2b109ea306c281a4f0",
+      "textHash": "99f94d67abc02d028a26495f0777c71668c3976a7141dd7ca7eedacfd966de24",
+      "expected": "You said you were behind bars.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:52.263Z",
+      "completedAt": "2026-09-06T21:06:52.613Z",
+      "requestId": null,
+      "transcript": "You said you were behind bars",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "You",
+          "start": 0.099,
+          "end": 0.379,
+          "logprob": -0.000013708974620385561
+        },
+        {
+          "text": "said",
+          "start": 0.399,
+          "end": 0.659,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "you",
+          "start": 0.68,
+          "end": 0.779,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "were",
+          "start": 0.799,
+          "end": 0.879,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "behind",
+          "start": 0.899,
+          "end": 1.459,
+          "logprob": -3.576278118089249e-7
+        },
+        {
+          "text": "bars",
+          "start": 1.479,
+          "end": 2.099,
+          "logprob": -0.0000014305104514278355
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "you",
+          "said",
+          "you",
+          "were",
+          "behind",
+          "bars"
+        ],
+        "recognizedWords": [
+          "you",
+          "said",
+          "you",
+          "were",
+          "behind",
+          "bars"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "ending-04": {
+      "id": "ending-04",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/ending-04.mp3",
+      "audioHash": "b44ef3e443d82d2cfad2e4f82d14088ea41d5698c1f706fcec91956a6ce4ee4c",
+      "textHash": "80ca2836920bef1272197371e545dc9498ef6cc95d780877fd9bd460cf24a880",
+      "expected": "The gelato bars. And then I walked behind these bars. For shade.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:52.615Z",
+      "completedAt": "2026-09-06T21:06:53.297Z",
+      "requestId": null,
+      "transcript": "The gelato bars. And then I walked behind these bars for shade",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "The",
+          "start": 0.079,
+          "end": 0.14,
+          "logprob": -0.0019647832959890366
+        },
+        {
+          "text": "gelato",
+          "start": 0.179,
+          "end": 0.74,
+          "logprob": -0.0017074067145586014
+        },
+        {
+          "text": "bars.",
+          "start": 0.879,
+          "end": 1.419,
+          "logprob": -0.001062215384808951
+        },
+        {
+          "text": "And",
+          "start": 2.519,
+          "end": 2.639,
+          "logprob": -0.0000058412379075889476
+        },
+        {
+          "text": "then",
+          "start": 2.679,
+          "end": 2.779,
+          "logprob": -0.0000015497195136049413
+        },
+        {
+          "text": "I",
+          "start": 2.98,
+          "end": 3,
+          "logprob": -0.000005602820692729438
+        },
+        {
+          "text": "walked",
+          "start": 3.019,
+          "end": 3.439,
+          "logprob": -0.00000250339189733495
+        },
+        {
+          "text": "behind",
+          "start": 3.46,
+          "end": 3.939,
+          "logprob": -0.0000058412379075889476
+        },
+        {
+          "text": "these",
+          "start": 3.98,
+          "end": 4.259,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "bars",
+          "start": 4.299,
+          "end": 4.819,
+          "logprob": -0.0000016689286894688848
+        },
+        {
+          "text": "for",
+          "start": 5.599,
+          "end": 5.739,
+          "logprob": -0.0016005337238311768
+        },
+        {
+          "text": "shade",
+          "start": 5.779,
+          "end": 6.239,
+          "logprob": -0.000014305012882687151
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "the",
+          "gelato",
+          "bars",
+          "and",
+          "then",
+          "i",
+          "walked",
+          "behind",
+          "these",
+          "bars",
+          "for",
+          "shade"
+        ],
+        "recognizedWords": [
+          "the",
+          "gelato",
+          "bars",
+          "and",
+          "then",
+          "i",
+          "walked",
+          "behind",
+          "these",
+          "bars",
+          "for",
+          "shade"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "ending-05": {
+      "id": "ending-05",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/ending-05.mp3",
+      "audioHash": "26806817100bc3934216b20220d3d960d98ca664a22028084f5e09b421a15f13",
+      "textHash": "68a02a18a16c2bf60c67b79365f4f08ae16130c16ad5e9f14fb01caf2bb33a6d",
+      "expected": "I jumped out of a window.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:53.299Z",
+      "completedAt": "2026-09-06T21:06:53.714Z",
+      "requestId": null,
+      "transcript": "I jumped out of a window",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "I",
+          "start": 0.059,
+          "end": 0.259,
+          "logprob": -0.00001156323378381785
+        },
+        {
+          "text": "jumped",
+          "start": 0.319,
+          "end": 0.62,
+          "logprob": -0.0000011920922133867862
+        },
+        {
+          "text": "out",
+          "start": 0.659,
+          "end": 0.799,
+          "logprob": 0
+        },
+        {
+          "text": "of",
+          "start": 0.839,
+          "end": 0.919,
+          "logprob": 0
+        },
+        {
+          "text": "a",
+          "start": 0.939,
+          "end": 0.979,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "window",
+          "start": 1.1,
+          "end": 1.56,
+          "logprob": -2.3841855067985307e-7
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "i",
+          "jumped",
+          "out",
+          "of",
+          "a",
+          "window"
+        ],
+        "recognizedWords": [
+          "i",
+          "jumped",
+          "out",
+          "of",
+          "a",
+          "window"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "ending-06": {
+      "id": "ending-06",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/ending-06.mp3",
+      "audioHash": "8f3223aa7c48b43dd4236ac87b5170c103110187ff5982b2b680e4af2cab38c8",
+      "textHash": "29b2aa63642390d3d357d83ffe326250f874ac96addfcc138a66d1210dd07a68",
+      "expected": "That’s nice. Look, the humans are having a meeting.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:53.715Z",
+      "completedAt": "2026-09-06T21:06:54.120Z",
+      "requestId": null,
+      "transcript": "That's nice. Look, the humans are having a meeting",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "That's",
+          "start": 0.059,
+          "end": 0.36,
+          "logprob": -0.000005582945505011594
+        },
+        {
+          "text": "nice.",
+          "start": 0.36,
+          "end": 0.879,
+          "logprob": -5.483619588630972e-7
+        },
+        {
+          "text": "Look,",
+          "start": 0.959,
+          "end": 1.579,
+          "logprob": -0.00006750893644493771
+        },
+        {
+          "text": "the",
+          "start": 1.62,
+          "end": 1.719,
+          "logprob": -4.768370445162873e-7
+        },
+        {
+          "text": "humans",
+          "start": 1.759,
+          "end": 2.22,
+          "logprob": -0.000023245540432981215
+        },
+        {
+          "text": "are",
+          "start": 2.259,
+          "end": 2.339,
+          "logprob": 0
+        },
+        {
+          "text": "having",
+          "start": 2.359,
+          "end": 2.619,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "a",
+          "start": 2.619,
+          "end": 2.72,
+          "logprob": 0
+        },
+        {
+          "text": "meeting",
+          "start": 2.759,
+          "end": 3.119,
+          "logprob": -0.000008702239938429557
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "that",
+          "is",
+          "nice",
+          "look",
+          "the",
+          "humans",
+          "are",
+          "having",
+          "a",
+          "meeting"
+        ],
+        "recognizedWords": [
+          "that",
+          "is",
+          "nice",
+          "look",
+          "the",
+          "humans",
+          "are",
+          "having",
+          "a",
+          "meeting"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "ending-07": {
+      "id": "ending-07",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/ending-07.mp3",
+      "audioHash": "af78b86a84104c930574f915e7a7115c2b11b75936406a80ff822d9862ad54b3",
+      "textHash": "273dec427147c0fd49cf30c30a2b31585cab60624f6d4c0abfd2f1da5e297e2a",
+      "expected": "…Do you think they know they’re in a zoo?",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:54.122Z",
+      "completedAt": "2026-09-06T21:06:54.566Z",
+      "requestId": null,
+      "transcript": "Do you think they know they're in a zoo?",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Do",
+          "start": 0.14,
+          "end": 0.199,
+          "logprob": -0.000033854863431770355
+        },
+        {
+          "text": "you",
+          "start": 0.219,
+          "end": 0.399,
+          "logprob": -4.768370445162873e-7
+        },
+        {
+          "text": "think",
+          "start": 0.419,
+          "end": 0.699,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "they",
+          "start": 0.699,
+          "end": 0.919,
+          "logprob": -3.576278118089249e-7
+        },
+        {
+          "text": "know",
+          "start": 0.939,
+          "end": 1.22,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "they're",
+          "start": 1.24,
+          "end": 1.399,
+          "logprob": -0.000020417407654349518
+        },
+        {
+          "text": "in",
+          "start": 1.399,
+          "end": 1.48,
+          "logprob": 0
+        },
+        {
+          "text": "a",
+          "start": 1.519,
+          "end": 1.599,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "zoo?",
+          "start": 1.62,
+          "end": 1.819,
+          "logprob": -0.0011592522457135601
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "do",
+          "you",
+          "think",
+          "they",
+          "know",
+          "they",
+          "are",
+          "in",
+          "a",
+          "zoo"
+        ],
+        "recognizedWords": [
+          "do",
+          "you",
+          "think",
+          "they",
+          "know",
+          "they",
+          "are",
+          "in",
+          "a",
+          "zoo"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    },
+    "ending-08": {
+      "id": "ending-08",
+      "status": "complete",
+      "audioPath": "public/audio/dialogue/ending-08.mp3",
+      "audioHash": "395da1b7a2feb315ded23dad1add2db7bef4860c760cc580fa99e7324b34bcfa",
+      "textHash": "6c61d83ee2fd21a470cc2d7820e7320db70ce44d1884d59b59c9b2ea7ff7f61b",
+      "expected": "Do you think we do? Anyway. Yours is melting.",
+      "model": "scribe_v2",
+      "requestedAt": "2026-09-06T21:06:54.568Z",
+      "completedAt": "2026-09-06T21:06:54.984Z",
+      "requestId": null,
+      "transcript": "Do you think we do? Anyway, yours is melting",
+      "languageCode": "eng",
+      "languageProbability": 1,
+      "words": [
+        {
+          "text": "Do",
+          "start": 0.099,
+          "end": 0.119,
+          "logprob": -0.0000058412379075889476
+        },
+        {
+          "text": "you",
+          "start": 0.139,
+          "end": 0.179,
+          "logprob": -1.1920928244535389e-7
+        },
+        {
+          "text": "think",
+          "start": 0.219,
+          "end": 0.379,
+          "logprob": 0
+        },
+        {
+          "text": "we",
+          "start": 0.419,
+          "end": 0.539,
+          "logprob": 0
+        },
+        {
+          "text": "do?",
+          "start": 0.579,
+          "end": 0.899,
+          "logprob": -1.1920927060297497e-7
+        },
+        {
+          "text": "Anyway,",
+          "start": 1.919,
+          "end": 2.359,
+          "logprob": -0.000004444754625053195
+        },
+        {
+          "text": "yours",
+          "start": 2.98,
+          "end": 3.24,
+          "logprob": -2.3841855067985307e-7
+        },
+        {
+          "text": "is",
+          "start": 3.279,
+          "end": 3.419,
+          "logprob": 0
+        },
+        {
+          "text": "melting",
+          "start": 3.46,
+          "end": 3.879,
+          "logprob": -7.152555099310121e-7
+        }
+      ],
+      "analysis": {
+        "expectedWords": [
+          "do",
+          "you",
+          "think",
+          "we",
+          "do",
+          "anyway",
+          "yours",
+          "is",
+          "melting"
+        ],
+        "recognizedWords": [
+          "do",
+          "you",
+          "think",
+          "we",
+          "do",
+          "anyway",
+          "yours",
+          "is",
+          "melting"
+        ],
+        "wordErrorRate": 0,
+        "edits": [],
+        "tolerated": [],
+        "flags": []
+      }
+    }
+  },
+  "updatedAt": "2026-09-06T21:09:03.412Z"
+}
